@@ -1,0 +1,49 @@
+<h2 class="text-center">Quest Angular 06</h2>
+<h3 class="text-center">Reactive Forms</h3>
+<hr>
+<form class="d-flex flex-column align-items-center" (ngSubmit)="onSubmit()" [formGroup]="searchForm" #myForm="ngForm">
+    <div class="col-6 mt-3" formGroupName="identifierAndTitle">
+        <div>
+            <label for="identifier" class="form-label">Identifier : </label>
+            <input class="form-control" id="identifier" name="identifier" formControlName="identifier" />
+        </div>
+        <div class="mt-3">
+            <label for="title" class="form-label">Title : </label>
+            <input class="form-control" id="title" name="title" formControlName="title" />
+        </div>
+        <!-- Error message -->
+        <div class="text-danger" *ngIf="myForm.submitted && f['identifierAndTitle']?.errors['isRequired']">
+            <span>One of the two fields Identifier or Title must be filled in</span>
+        </div>
+    </div>
+    <div class="col-6 mt-3">
+        <label for="type" class="form-label">Type : </label>
+        <select class="form-control" id="type" name="type" formControlName="type">
+            <option value="movie">Movie</option>
+            <option value="series">Series</option>
+            <option value="episode">Episode</option>
+        </select>
+    </div>
+    <div class="col-6 mt-3">
+        <label for="releaseYear" class="form-label">Release Year : </label>
+        <input class="form-control" id="releaseYear" type="number" name="releaseYear" formControlName="releaseYear" />
+        <!-- Error message -->
+        <div class="text-danger" *ngIf="myForm.submitted && f['releaseYear'].errors['required']">
+            <span>The Release Year field is required</span>
+        </div>
+        <div class="text-danger" *ngIf="myForm.submitted && f['releaseYear'].errors['min']">
+            <span>The year must be between {{ myForm.submitted && f['releaseYear'].errors['min'].minYearRequired }} and {{ myForm.submitted && f['releaseYear'].errors['min'].maxYearRequired }}</span>
+        </div>
+    </div>
+    <div class="col-6 mt-3" *ngIf="f['identifierAndTitle']?.get('identifier')?.value">
+        <label for="sheet" class="form-label">Sheet : </label>
+        <select class="form-control" id="sheet" name="sheet" formControlName="sheet">
+            <option value="full">Full</option>
+            <option value="short">Short</option>
+        </select>
+    </div>
+    <div class="col-6 mt-3">
+        <button class="btn btn-primary col-6" type="submit">Registration</button>
+        <button class="btn btn-danger col-6" type="reset">Reset</button>
+    </div>
+</form>
