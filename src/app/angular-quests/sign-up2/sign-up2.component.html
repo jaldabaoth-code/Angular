@@ -1,0 +1,44 @@
+<form class="d-flex flex-column align-items-center" (ngSubmit)="myForm.valid && onSubmit()" #myForm="ngForm">
+    <div class="col-6 mt-3">
+        <label for="firstName" class="form-label">First Name : </label>
+        <input class="form-control" id="firstName" name="firstName" type="text" [(ngModel)]="user.firstName" #firstName="ngModel" required minlength="3" maxlength="15" />
+        <!-- Message d'erreurs -->
+        <div class="text-danger" *ngIf="myForm.submitted && firstName.errors">
+            <span *ngIf="firstName.errors['required']">The First Name is required</span>
+            <span *ngIf="firstName.errors['minlength']">The First Name must contain at least 3 characters</span>
+            <span *ngIf="firstName.errors['maxlength']">The First Name must not exceed 15 characters</span>
+        </div>
+    </div>
+    <div class="col-6 mt-3">
+        <label for="lastName" class="form-label">Last Name : </label>
+        <input class="form-control" id="lastName" name="lastName" type="text" [(ngModel)]="user.lastName" #lastName="ngModel" required minlength="3" maxlength="15" />
+        <!-- Message d'erreurs -->
+        <div class="text-danger" *ngIf="myForm.submitted && lastName.errors">
+            <span *ngIf="lastName.errors['required']">The Last Name is required</span>
+            <span *ngIf="lastName.errors['minlength']">The Last Name must contain at least 3 characters</span>
+            <span *ngIf="lastName.errors['maxlength']">Last Name must not exceed 15 characters</span>
+        </div>
+    </div>
+    <div class="col-6 mt-3">
+        <label for="email" class="form-label">E-Mail : </label>
+        <input class="form-control" id="email" name="email" type="text" [(ngModel)]="user.mail" #mail="ngModel" required email />
+        <!-- Message d'erreurs -->
+        <div class="text-danger" *ngIf="myForm.submitted && mail.errors">
+            <span *ngIf="mail.errors['required']">The Mail is required</span>
+            <span *ngIf="mail.errors['email']">The Mail is invalid</span>
+        </div>
+    </div>
+    <div class="col-6 mt-3">
+        <label for="password" class="form-label">Password : </label>
+        <input class="form-control" id="password" name="password" type="password" [(ngModel)]="user.password" #password="ngModel" required minlength="8" />
+        <!-- Message d'erreurs -->
+        <div class="text-danger" *ngIf="myForm.submitted && password.errors">
+            <span *ngIf="password.errors['required']">The password is required</span>
+            <span *ngIf="password.errors['minlength']">The password must contain at least 8 characters</span>
+        </div>
+    </div>
+    <div class="col-6 d-flex justify-content-around mt-3">
+        <button class="btn btn-primary col-6" type="submit">Registration</button>
+        <button class="btn btn-danger col-6" type="reset">Reset</button>
+    </div>
+</form>

@@ -1,0 +1,10 @@
+<button (click)="AfficherMasquerOutput()">Afficher Quete 08 - Output</button>
+<div [hidden]="isShowOutput">
+  <app-create-onomatopia (sendOnomatopiaToParent)="onReceiveNewOnomatopia($event)"></app-create-onomatopia>
+  <div>
+    <ul>
+      <li *ngFor="let onomatopoeia of onomatopoeias">{{ onomatopoeia }}</li>
+    </ul>
+  </div>
+</div>
+<hr />

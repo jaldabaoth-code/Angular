@@ -1,0 +1,91 @@
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item font-weight-bold">
+                    <a routerLink="/sign-up" class="nav-link font-weight-bold">SIGN-UP (Reactive form)</a>
+                </li>
+                <li class="nav-item font-weight-bold">
+                    <a routerLink="/02-binding" class="nav-link font-weight-bold">USER</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/search" class="nav-link font-weight-bold">Tuto Search exemple</a>
+                </li>
+                <li class="nav-item font-weight-bold">
+                    <a routerLink="/sign-up2" class="nav-link font-weight-bold">SIGN-UP (Driven Form)</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/searchMovie" class="nav-link font-weight-bold">Search Movie</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/input" class="nav-link font-weight-bold">Input</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/kittens" class="nav-link font-weight-bold">Les interactions utilisateur</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/cocktails" class="nav-link font-weight-bold">Cocktails (Service)</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/cocktails2" class="nav-link font-weight-bold">Cocktails &#45;&#45; JSON (Service 2)</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/nasa" class="nav-link font-weight-bold">Nasa</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/output" class="nav-link font-weight-bold">Output</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/pokedex" class="nav-link font-weight-bold">Pokedex</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>-->
+<app-navbar></app-navbar>
+<!--<app-menu></app-menu>-->
+
+<router-outlet></router-outlet>
+
+<!--<button (click)="AfficherMasquerOutput()">Afficher Quete 08 - Output</button>
+    <div [hidden]="isShowOutput">
+        <app-create-onomatopia (sendOnomatopiaToParent)="onReceiveNewOnomatopia($event)"></app-create-onomatopia>
+        <div>
+            <ul>
+                <li *ngFor="let onomatopoeia of onomatopoeias">{{ onomatopoeia }}</li>
+            </ul>
+        </div>
+    </div>
+<hr />-->
+
+<!--<button (click)="AfficherMasquerNasa()">Afficher Quete 12 - NASA</button>
+<div [hidden]="isShowNasa">
+    <h2>12 La NASA vous rend service !</h2>
+    <img src="{{ imgOfTheDay }}" />
+</div>-->
+
+<!--<br/>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" routerLink="">
+                <img src="../assets/img/pokedexLogo.png" alt="" width="auto" height="70" class="d-inline-block align-text-top">
+            </a>
+            <div class="menu">
+                <a routerLink="/create">Create your pokemon</a>
+                <a routerLink="/pokedex">Pokedex</a>
+            </div>
+        </div>
+    </nav>
+<br/>-->
+
+
+<!--
+<div *ngIf="game != undefined; else other" class="game-list-container">
+  <div [ngStyle]="{'background-image': 'url(' + game.background_image + ')'}">
+    <app-game-list (choosedGame)="game = $event"></app-game-list>
+  </div>
+</div>
+<ng-template #other>
+  <app-game-list (choosedGame)="game = $event"></app-game-list>
+</ng-template>
+-->

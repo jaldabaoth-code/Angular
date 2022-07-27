@@ -1,0 +1,10 @@
+.square {
+    height: 50px;
+    width: 50px;
+    border: 3px solid black;
+}
+
+.container {
+    height: 70vh;
+    max-width: 100%;
+}

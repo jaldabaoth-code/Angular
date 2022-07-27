@@ -1,0 +1,9 @@
+<h2 class="text-center">Quest Angular 03</h2>
+<h3 class="text-center">Directives 1</h3>
+<hr>
+<div class="d-flex align-items-center flex-column m-0">
+    <h4 class="mb-2" [ngClass]="{ 'edit' : isAdmin === true }">Welcome - {{ title }}</h4>
+    <button class="col mt-2" (click)="isAdmin = !isAdmin">Admin/User</button>
+    <button class="col mt-2">View</button>
+    <button class="col mt-2" *ngIf="isAdmin">Edit</button>
+</div>

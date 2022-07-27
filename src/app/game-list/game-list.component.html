@@ -1,0 +1,55 @@
+<app-game [game]="chooseGame"></app-game>
+
+
+<div *ngIf="choosedGame != undefined; else other" class="game-list-container">
+  <div [ngStyle]="{'background-image': 'url(' + choosedGame.background_image + ')'}">
+
+    <h2>Checkpoint 2 CDA - angular</h2>
+    <div class="toto">
+      <button (click)="eventName()">choisir comme arriere plan</button>
+      <br style="text-align:center" class="mt-5">
+      <h1>Games List</h1>
+      <div *ngIf="games != undefined" class="game-list-container">
+        <div *ngFor="let game of games">
+          <div class="gameCard" (click)="sendGame(game)">
+            <img width="250" alt="game image" src={{game.background_image}}>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <p>TITI</p>
+  </div>
+</div>
+<ng-template #other>
+  <!--  <app-game-list (choosedGame)="gamet = $event"></app-game-list>-->
+  <h2>Checkpoint 2 CDA - angular</h2>
+  <div class="toto">
+    <button (click)="eventName()">choisir comme arriere plan</button>
+    <br style="text-align:center" class="mt-5">
+    <h1>Games List</h1>
+    <div *ngIf="games != undefined" class="game-list-container">
+      <div *ngFor="let game of games">
+        <div class="gameCard" (click)="sendGame(game)">
+          <img width="250" alt="game image" src={{game.background_image}}>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <p>TOTO</p>
+</ng-template>
+
+
+
+
+<!--<div *ngIf="game != undefined; else other" class="game-list-container">
+  <div [ngStyle]="{'background-image': 'url(' + game.background_image + ')'}">
+    <app-game-list (choosedGame)="game = $event"></app-game-list>
+  </div>
+</div>
+<ng-template #other>
+  <app-game-list (choosedGame)="game = $event"></app-game-list>
+</ng-template>&ndash;-->

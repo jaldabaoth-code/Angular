@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Ajouter un chat</h1>
+  <form [formGroup]="kittenForm" (ngSubmit)="thisForm.valid && createKitten()" #thisForm="ngForm">
+    <label>Nom :
+      <input type="text" name="name" class="form-control" placeholder="Name" formControlName="kittenName" />
+    </label>
+    <label>Race :
+      <input type="text" name="race" class="form-control" placeholder="Race" formControlName="race" />
+    </label>
+    <label>Date de naissance :
+      <input type="date" name="birthday" class="form-control" placeholder="Birthdate" formControlName="birthdate" />
+    </label>
+    <label>Lien de l'image :
+      <input type="url" name="image" class="form-control" placeholder="imageUrl" formControlName="imgLink" />
+    </label>
+    <button type="submit" class="btn btn-primary">Valider</button>
+  </form>
+</div>

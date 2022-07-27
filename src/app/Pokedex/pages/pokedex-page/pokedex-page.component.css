@@ -1,0 +1,23 @@
+.bg-light{
+  background-color : rgba(192, 192, 192, 0) !important;
+}
+
+.menu{
+  width: 20rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu a{
+  text-decoration: none;
+  color : black;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color : #ff0000;
+  padding : .5rem;
+}
+
+.menu a:hover{
+  box-shadow: 2px 2px 5px black;
+  background-color : #ff0000;
+}

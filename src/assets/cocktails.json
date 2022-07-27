@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "name": "Monaco",
+      "price": 15,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Monaco_bi%C3%A8re.jpeg/270px-Monaco_bi%C3%A8re.jpeg"
+    },
+    {
+      "name": "Alexander",
+      "price": 13,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Alexander_Cocktail.png/355px-Alexander_Cocktail.png"
+    }
+  ]
+}

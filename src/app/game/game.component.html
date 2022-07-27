@@ -1,0 +1,11 @@
+<div *ngIf="game != undefined" class="game-container">
+  <h2>Checkpoint 2 CDA - angular</h2>
+  <div class="card-body">
+    <h2 class="card-title">Id : {{game.id}}</h2>
+    <h2 class="card-title">Name : {{game.name}}</h2>
+    <h3 class="card-title">Released : {{game.released}}</h3>
+    <h3 class="card-title">Rating : {{game.rating}}</h3>
+  </div>
+  <img width="250" alt="game image" src={{game.background_image}}>
+</div>
+<hr/>
