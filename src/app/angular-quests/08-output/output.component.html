@@ -1,0 +1,14 @@
+<h2 class="text-center">Quest Angular 08</h2>
+<h3 class="text-center">Output</h3>
+<hr>
+<div class="d-flex align-items-center flex-column">
+    <button class="btn btn-dark col-6" (click)="showHideOutput()">Display/Hide The Quest</button>
+    <div class="mt-5 col-6" [hidden]="isShowOutput">
+        <app-create-onomatopoeia (sendOnomatopoeiaToParent)="receiveNewOnomatopoeia($event)"></app-create-onomatopoeia>
+        <div class="bg-light">
+            <ul>
+                <li *ngFor="let onomatopoeia of onomatopoeias">{{ onomatopoeia }}</li>
+            </ul>
+        </div>
+    </div>
+</div>

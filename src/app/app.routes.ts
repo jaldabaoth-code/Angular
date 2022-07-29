@@ -5,19 +5,20 @@ import { Directives1Component } from "./angular-quests/03-directives/directives1
 import { Directives2Component } from "./angular-quests/03-directives/directives2/directives2.component";
 import { DrivenFormsComponent} from "./angular-quests/05-driven-forms/driven-forms.component";
 import { ReactiveFormsComponent } from "./angular-quests/06-reactive-forms/reactive-forms.component";
+import {InputComponent} from "./angular-quests/07-input/input.component";
+import { OutputComponent} from "./angular-quests/08-output/output.component";
+import { ListKittenComponent} from "./angular-quests/09-user-interactions/list-kitten/list-kitten.component";
+
 
 import { SignUpComponent } from './menu/sign-up/sign-up.component';
 import { SearchComponent } from "./search/search.component";
-import { DeveloperComponent} from "./Input/developer/developer.component";
-import { ListKittenComponent} from "./kitten-story/list-kitten/list-kitten.component";
 import { CocktailListComponent} from "./cocktail-list/cocktail-list.component";
 import { CocktailList2Component} from "./cocktail-list2/cocktail-list2.component";
 import { CreatePokemonComponent } from './Pokedex/pages/create-pokemon/create-pokemon.component';
 import { PokedexPageComponent } from './Pokedex/pages/pokedex-page/pokedex-page.component';
 import { NasaComponent } from "./nasa/nasa.component";
-import { OutputComponent } from "./output/output.component";
 import { GameListComponent } from "./game-list/game-list.component";
-import {InputComponent} from "./angular-quests/07-input/input.component";
+
 
 
 
@@ -29,15 +30,17 @@ const ROUTES: Routes = [
     { path: 'driven-forms', component: DrivenFormsComponent },
     { path: 'reactive-forms', component: ReactiveFormsComponent },
     { path: 'input', component: InputComponent },
+    { path: 'output', component: OutputComponent },
+    { path: 'user-interactions', component: ListKittenComponent },
 
     { path: 'sign-up', component: SignUpComponent },
     { path: '', component: BindingComponent },
     { path: 'search', component: SearchComponent },
-    { path: 'kittens', component: ListKittenComponent },
+
     { path: 'cocktails', component: CocktailListComponent },
     { path: 'cocktails2', component: CocktailList2Component },
     { path: 'nasa', component: NasaComponent },
-    { path: 'output', component: OutputComponent },
+
     { path: 'game-list', component: GameListComponent },
     { path:"pokedex", component: PokedexPageComponent },
     { path:"create", component:CreatePokemonComponent },

@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { InputComponent } from './input.component';
+import { CreateOnomatopoeiaComponent } from "./create-onomatopoeia.component";
 
-describe('InputComponent', () => {
-    let component: InputComponent;
-    let fixture: ComponentFixture<InputComponent>;
+describe('CreateOnomatopoeiaComponent', () => {
+    let component: CreateOnomatopoeiaComponent;
+    let fixture: ComponentFixture<CreateOnomatopoeiaComponent>;
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ InputComponent ]
+            declarations: [ CreateOnomatopoeiaComponent ]
         })
         .compileComponents();
     });
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(InputComponent);
+        fixture = TestBed.createComponent(CreateOnomatopoeiaComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });
