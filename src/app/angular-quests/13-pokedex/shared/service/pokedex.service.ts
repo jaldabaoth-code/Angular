@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from  '@angular/common/http';
-import {POKEMONSNAMES} from "../../../../assets/pokemons3-mock";
+import {POKEMONSNAMES} from "../../../../../assets/pokemons3-mock";
 import { PokemonNames } from '../models/pokemon-names.model';
 
 @Injectable({

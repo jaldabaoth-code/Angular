@@ -1,13 +1,13 @@
 /*
 import { TestBed, async } from '@angular/core/testing';
-import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
+import { Services1Component } from './cocktail-list/cocktail-list.component';
 import { CocktailService } from './cocktail-list/service/cocktail.service';
 
 describe('Quest Test Suite', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        CocktailListComponent
+        Services1Component
       ],
     }).compileComponents();
   }));
@@ -23,8 +23,8 @@ describe('Quest Test Suite', () => {
     expect(tab.length).toBeGreaterThan(0);
   });
 
-  fit('should create a CocktailListComponent instance', async(() => {
-    const fixture = TestBed.createComponent(CocktailListComponent);
+  fit('should create a Services1Component instance', async(() => {
+    const fixture = TestBed.createComponent(Services1Component);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
@@ -33,7 +33,7 @@ describe('Quest Test Suite', () => {
     'component should have a public property named "cocktails"',
     async(
       () => {
-        const fixture = TestBed.createComponent(CocktailListComponent);
+        const fixture = TestBed.createComponent(Services1Component);
         fixture.detectChanges();
         expect(fixture.componentInstance.cocktails).toBeTruthy();
       }
@@ -44,7 +44,7 @@ describe('Quest Test Suite', () => {
     'component should display at least one cocktail',
     async(
       () => {
-        const fixture = TestBed.createComponent(CocktailListComponent);
+        const fixture = TestBed.createComponent(Services1Component);
         fixture.detectChanges();
         const compiled = fixture.debugElement.nativeElement;
         const content = compiled.textContent;
@@ -89,7 +89,7 @@ describe('Quest Test Suite', () => {
     );
   });
 
-  fit('should create a CocktailListComponent instance', async(() => {
+  fit('should create a Services1Component instance', async(() => {
     const fixture = TestBed.createComponent(CocktailListComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();

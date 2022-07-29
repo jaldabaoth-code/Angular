@@ -17,36 +17,38 @@ import { ReactiveFormsComponent } from './angular-quests/06-reactive-forms/react
 import { InputComponent } from './angular-quests/07-input/input.component';
 import { DeveloperComponent } from "./angular-quests/07-input/developer/developer.component";
 import { SkillComponent } from "./angular-quests/07-input/skill/skill.component";
-import { OutputComponent} from "./angular-quests/08-output/output.component";
-import { CreateOnomatopoeiaComponent} from "./angular-quests/08-output/create-onomatopoeia/create-onomatopoeia.component";
+import { OutputComponent } from "./angular-quests/08-output/output.component";
+import { CreateOnomatopoeiaComponent } from "./angular-quests/08-output/create-onomatopoeia/create-onomatopoeia.component";
 
 import { CreateKittenComponent} from "./angular-quests/09-user-interactions/create-kitten/create-kitten.component";
 import { UserKittenComponent} from "./angular-quests/09-user-interactions/user-kitten/user-kitten.component";
 import { ListKittenComponent} from "./angular-quests/09-user-interactions/list-kitten/list-kitten.component";
+
+import { Services1Component } from "./angular-quests/10-services1/services1.component";
+import { Services2Component } from "./angular-quests/11-services/services2.component";
+import { NasaComponent } from "./angular-quests/12-nasa/nasa.component";
+import { PokemonListComponent} from "./angular-quests/13-pokedex/components/pokemon-list/pokemon-list.component";
+import { PokemonDetailComponent } from "./angular-quests/13-pokedex/components/pokemon-detail/pokemon-detail.component";
+import { PokedexPageComponent } from "./angular-quests/13-pokedex/pages/pokedex-page/pokedex-page.component";
+import { CreatePokemonComponent } from "./angular-quests/13-pokedex/pages/create-pokemon/create-pokemon.component";
 
 
 
 import { MenuComponent } from './menu/menu.component';
 import { SignUpComponent } from './menu/sign-up/sign-up.component';
 import { SearchComponent } from './search/search.component';
-import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
-import { CocktailList2Component } from './cocktail-list2/cocktail-list2.component';
-import { PokemonListComponent } from './Pokedex/components/pokemon-list/pokemon-list.component';
-import { PokemonDetailComponent } from './Pokedex/components/pokemon-detail/pokemon-detail.component';
-import { PokedexPageComponent } from './Pokedex/pages/pokedex-page/pokedex-page.component';
-import { CreatePokemonComponent } from './Pokedex/pages/create-pokemon/create-pokemon.component';
 import { LogInterceptor } from "../interceptor/core/log.interceptor";
-import { NasaComponent } from './nasa/nasa.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GameListComponent } from './game-list/game-list.component';
 import { GameComponent } from './game/game.component';
+import { UserInteractionsComponent } from './angular-quests/09-user-interactions/user-interactions.component';
 
 
 
 
 @NgModule({
     declarations: [AppComponent, ComponentsComponent, BindingComponent, Directives1Component, Directives2Component, DisplayMoviesDirective, StylesDirective, DrivenFormsComponent, DeveloperComponent, SkillComponent,
-      SignUpComponent, MenuComponent, SearchComponent, CreateOnomatopoeiaComponent, CreateKittenComponent, UserKittenComponent, ListKittenComponent, CocktailListComponent, CocktailList2Component, PokemonListComponent, PokemonDetailComponent, PokedexPageComponent, CreatePokemonComponent, NasaComponent, OutputComponent, NavbarComponent, GameListComponent, GameComponent, ReactiveFormsComponent, InputComponent],
+      SignUpComponent, MenuComponent, SearchComponent, CreateOnomatopoeiaComponent, CreateKittenComponent, UserKittenComponent, ListKittenComponent, Services1Component, Services2Component, PokemonListComponent, PokemonDetailComponent, PokedexPageComponent, CreatePokemonComponent, NasaComponent, OutputComponent, NavbarComponent, GameListComponent, GameComponent, ReactiveFormsComponent, InputComponent, UserInteractionsComponent],
     imports: [HttpClientModule, BrowserModule, FormsModule, ReactiveFormsModule, RouterModule.forRoot(ROUTES), AppRoutingModule],
     providers: [
         {

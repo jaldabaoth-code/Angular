@@ -1,3 +1,5 @@
-<div *ngFor="let cat of kitten  | keyvalue">
-  <div>{{ cat.value }}</div>
+<div class="kitten mb-3" *ngFor="let kitten of kittens; let index = index">
+    <div><b>Name : </b>{{ kitten.name}}</div>
+    <div><b>Race : </b>{{ kitten.race }}</div>
+    <div><b>Birthdate : </b>{{ kitten.birthdate | date: 'dd MM yyyy' }}</div>
 </div>

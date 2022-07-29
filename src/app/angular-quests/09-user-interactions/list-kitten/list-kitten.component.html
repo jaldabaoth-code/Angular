@@ -1,27 +1,25 @@
-<div class="container row">
-  <div class="col-10">
-    <app-create-kitten (sendKitten)="addKitten($event)"></app-create-kitten>
-    <h2>Liste des chatons à adopter</h2>
-    <div class="row justify-content-center">
-      <div class="card col-6 p-2 m-3" style="width: 18rem" *ngFor="let currentKitten of kittens; let index = index" >
-        <div class="example">
-          <img src="{{ currentKitten.img }}" class="card-img-top" alt="house"  />
-          <div class="fadedbox">
-            <div class="card-body">
-              <ul>
-                <li>Nom : {{ currentKitten.name }}</li>
-                <li>Race : {{ currentKitten.race }}</li>
-                <li>Date de Naissance : {{ currentKitten.birthdate }}</li>
-              </ul>
-            </div>
-          </div>
+<div class="d-flex">
+    <div class="col-8 d-flex pl-0 pr-1">
+        <div class="createKitten col-5 pb-5">
+            <app-create-kitten (sendKitten)="addKitten($event)"></app-create-kitten>
         </div>
-        <button type="button" class="btn btn-primary" (click)="adoptKitten(index)">Adopter</button>
-      </div>
+        <div class="kittensToAdopt col-7">
+            <h4 class="text-center">Kittens to adopt</h4>
+            <div class="row justify-content-around">
+                <div class="card col-5 information p-2 m-2" *ngFor="let currentKitten of kittens; let index = index" >
+                    <img src="{{ currentKitten.image }}" class="card-img-top" alt="kitten image" />
+                    <div class="box">
+                        <div>Name : {{ currentKitten.name }}</div>
+                        <div>Race : {{ currentKitten.race }}</div>
+                        <div>Birthdate : {{ currentKitten.birthdate }}</div>
+                    </div>
+                    <button type="button" class="btn btn-primary mt-1" (click)="adoptKitten(index)">Adopt The Kitten</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="col-2">
-    <h3>Vos chatons</h3>
-    <app-user-kitten *ngFor="let currentKitten of userKittens" [kitten]="currentKitten"></app-user-kitten>
-  </div>
+    <div class="adoptedKitten col-4">
+        <h4 class="text-center">Adopted Kittens</h4>
+        <app-user-kitten [kittens]="userKittens"></app-user-kitten>
+    </div>
 </div>

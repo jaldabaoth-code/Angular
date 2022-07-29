@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 
-import { CreatePokemonComponent } from './Pokedex/pages/create-pokemon/create-pokemon.component';
-import { PokedexPageComponent } from './Pokedex/pages/pokedex-page/pokedex-page.component';
+import { CreatePokemonComponent} from "./angular-quests/13-pokedex/pages/create-pokemon/create-pokemon.component";
+import { PokedexPageComponent} from "./angular-quests/13-pokedex/pages/pokedex-page/pokedex-page.component";
 import {AppComponent} from "./app.component";
 
 

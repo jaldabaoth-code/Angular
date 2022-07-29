@@ -1,0 +1,13 @@
+<h2 class="text-center">Quest Angular 10</h2>
+<h3 class="text-center">Services 1</h3>
+<hr>
+<div class="cocktail m-5 pb-5">
+    <h4 class="d-flex justify-content-center my-3">Cocktails</h4>
+    <div class="d-flex justify-content-center col">
+        <div class="cocktail flex-column col-4 mx-1 pb-3" *ngFor="let cocktail of cocktails">
+            <div>Name : {{ cocktail.name }}</div>
+            <div>Price : {{ cocktail.price }}</div>
+            <div class="cocktail d-flex justify-content-center"><img src="{{ cocktail.image }}"></div>
+        </div>
+    </div>
+</div>

@@ -1,18 +1,20 @@
-<div class="container">
-  <h1>Ajouter un chat</h1>
-  <form [formGroup]="kittenForm" (ngSubmit)="thisForm.valid && createKitten()" #thisForm="ngForm">
-    <label>Nom :
-      <input type="text" name="name" class="form-control" placeholder="Name" formControlName="kittenName" />
-    </label>
-    <label>Race :
-      <input type="text" name="race" class="form-control" placeholder="Race" formControlName="race" />
-    </label>
-    <label>Date de naissance :
-      <input type="date" name="birthday" class="form-control" placeholder="Birthdate" formControlName="birthdate" />
-    </label>
-    <label>Lien de l'image :
-      <input type="url" name="image" class="form-control" placeholder="imageUrl" formControlName="imgLink" />
-    </label>
-    <button type="submit" class="btn btn-primary">Valider</button>
-  </form>
-</div>
+<h4 class="text-center">Add a Kitten</h4>
+<form [formGroup]="kittenForm" (ngSubmit)="thisForm.valid && createKitten()" #thisForm="ngForm">
+    <div class="mt-3">
+        <label for="name" class="form-label">Name : </label>
+        <input id="name" type="text" name="name" class="form-control" placeholder="Kitten name" formControlName="name" />
+    </div>
+    <div class="mt-3">
+        <label for="race" class="form-label">Race : </label>
+        <input id="race" type="text" name="race" class="form-control" placeholder="Kitten race" formControlName="race" />
+    </div>
+    <div class="mt-3">
+        <label for="birthdate" class="form-label">Birthdate : </label>
+        <input id="birthdate" type="date" name="birthdate" class="form-control" placeholder="Kitten birthdate" formControlName="birthdate" />
+    </div>
+    <div class="mt-3">
+        <label for="imageLink" class="form-label">Image link : </label>
+        <input id="imageLink" type="url" name="imageLink" class="form-control" placeholder="Kitten photo Url" formControlName="imageLink" />
+    </div>
+    <button type="submit" class="btn btn-primary col mt-3">Validate</button>
+</form>

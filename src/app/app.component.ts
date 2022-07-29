@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {NasaService} from "./nasa/service/nasa.service";
+import {NasaService} from "./angular-quests/12-nasa/service/nasa.service";
 
 @Component({
   selector: 'app-root',

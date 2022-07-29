@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     styleUrls: ['./output.component.css']
 })
 export class OutputComponent {
-    public onomatopoeias: string[] = [];
+    onomatopoeias: string[] = [];
     isShowOutput = true;
 
     constructor() { }

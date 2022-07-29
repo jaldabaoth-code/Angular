@@ -1,4 +1,4 @@
-import {PokemonNames} from "../app/Pokedex/shared/models/pokemon-names.model";
+import {PokemonNames} from "../app/angular-quests/13-pokedex/shared/models/pokemon-names.model";
 
 export const POKEMONSNAMES: PokemonNames[] = [
   {

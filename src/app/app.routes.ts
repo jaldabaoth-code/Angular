@@ -5,18 +5,20 @@ import { Directives1Component } from "./angular-quests/03-directives/directives1
 import { Directives2Component } from "./angular-quests/03-directives/directives2/directives2.component";
 import { DrivenFormsComponent} from "./angular-quests/05-driven-forms/driven-forms.component";
 import { ReactiveFormsComponent } from "./angular-quests/06-reactive-forms/reactive-forms.component";
-import {InputComponent} from "./angular-quests/07-input/input.component";
+import { InputComponent } from "./angular-quests/07-input/input.component";
 import { OutputComponent} from "./angular-quests/08-output/output.component";
 import { ListKittenComponent} from "./angular-quests/09-user-interactions/list-kitten/list-kitten.component";
 
 
+import { Services1Component} from "./angular-quests/10-services1/services1.component";
+import { Services2Component} from "./angular-quests/11-services/services2.component";
+import { NasaComponent } from "./angular-quests/12-nasa/nasa.component";
+import { CreatePokemonComponent } from "./angular-quests/13-pokedex/pages/create-pokemon/create-pokemon.component";
+import { PokedexPageComponent } from "./angular-quests/13-pokedex/pages/pokedex-page/pokedex-page.component";
+import { UserInteractionsComponent } from "./angular-quests/09-user-interactions/user-interactions.component";
+
 import { SignUpComponent } from './menu/sign-up/sign-up.component';
 import { SearchComponent } from "./search/search.component";
-import { CocktailListComponent} from "./cocktail-list/cocktail-list.component";
-import { CocktailList2Component} from "./cocktail-list2/cocktail-list2.component";
-import { CreatePokemonComponent } from './Pokedex/pages/create-pokemon/create-pokemon.component';
-import { PokedexPageComponent } from './Pokedex/pages/pokedex-page/pokedex-page.component';
-import { NasaComponent } from "./nasa/nasa.component";
 import { GameListComponent } from "./game-list/game-list.component";
 
 
@@ -31,14 +33,16 @@ const ROUTES: Routes = [
     { path: 'reactive-forms', component: ReactiveFormsComponent },
     { path: 'input', component: InputComponent },
     { path: 'output', component: OutputComponent },
-    { path: 'user-interactions', component: ListKittenComponent },
+    { path: 'user-interactions', component: UserInteractionsComponent },
+
+    { path: 'services1', component: Services1Component },
+    { path: 'services2', component: Services2Component },
 
     { path: 'sign-up', component: SignUpComponent },
     { path: '', component: BindingComponent },
     { path: 'search', component: SearchComponent },
 
-    { path: 'cocktails', component: CocktailListComponent },
-    { path: 'cocktails2', component: CocktailList2Component },
+
     { path: 'nasa', component: NasaComponent },
 
     { path: 'game-list', component: GameListComponent },
