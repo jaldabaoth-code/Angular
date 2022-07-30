@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { PokedexService } from '../../shared/service/pokedex.service';
-import { PokemonNames } from '../../shared/models/pokemon-names.model';
+import { Pokemon } from '../../shared/models/pokemon.model';
 
 @Component({
   selector: 'app-pokemon-list',
@@ -9,27 +9,27 @@ import { PokemonNames } from '../../shared/models/pokemon-names.model';
   providers: [PokedexService]
 })
 export class PokemonListComponent implements OnInit {
-  pokes: any = [];
+    pokes: any = [];
 
-  getPokes():void {
-    this.pokedexService.getPokes();
-  }
+    getPokes():void {
+        this.pokedexService.getPokes();
+    }
 
-  @Input()
-  public pokemons: PokemonNames[] | undefined;
+    @Input()
+    public pokemons: Pokemon[] | undefined;
 
-  @Output()
-  public pokemonClick: EventEmitter<PokemonNames> = new EventEmitter<PokemonNames>();
+    @Output()
+    public pokemonClick: EventEmitter<Pokemon> = new EventEmitter<Pokemon>();
 
-  constructor(private pokedexService : PokedexService){
-    this.pokes  = this.pokedexService.pokes;
-  }
+    constructor(private pokedexService : PokedexService) {
+        this.pokes = this.pokedexService.pokes;
+    }
 
-  ngOnInit(): void {
-    this.getPokes();
-  }
+    ngOnInit(): void {
+        this.getPokes();
+    }
 
-  sendPokemon(pokemonNames: PokemonNames){
-    this.pokemonClick.emit(pokemonNames);
-  }
+    sendPokemon(pokemonNames: Pokemon) {
+        this.pokemonClick.emit(pokemonNames);
+    }
 }

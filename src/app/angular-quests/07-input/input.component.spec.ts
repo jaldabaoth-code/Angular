@@ -7,7 +7,7 @@ describe('InputComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ InputComponent ]
+            declarations: [InputComponent]
         })
         .compileComponents();
     });

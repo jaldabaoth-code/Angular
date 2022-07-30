@@ -7,7 +7,7 @@ describe('UserInteractionsComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ UserInteractionsComponent ]
+            declarations: [UserInteractionsComponent]
         })
         .compileComponents();
     });

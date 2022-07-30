@@ -8,7 +8,7 @@
             <div class="row justify-content-around">
                 <div class="card col-5 information p-2 m-2" *ngFor="let currentKitten of kittens; let index = index" >
                     <img src="{{ currentKitten.image }}" class="card-img-top" alt="kitten image" />
-                    <div class="box">
+                    <div class="box p-3">
                         <div>Name : {{ currentKitten.name }}</div>
                         <div>Race : {{ currentKitten.race }}</div>
                         <div>Birthdate : {{ currentKitten.birthdate }}</div>

@@ -1,8 +1,7 @@
-.image-container{
+.image-container {
     width: 30%;
     height: 50%;
     position: absolute;
     background-repeat: no-repeat;
     background-size: 50%;
 }
-

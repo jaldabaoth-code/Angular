@@ -7,7 +7,7 @@ describe('DrivenFormsComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ DrivenFormsComponent ]
+            declarations: [DrivenFormsComponent]
         })
         .compileComponents();
     });

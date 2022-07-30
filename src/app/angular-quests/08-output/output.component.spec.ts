@@ -7,7 +7,7 @@ describe('OutputComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ OutputComponent ]
+            declarations: [OutputComponent]
         })
         .compileComponents();
     });

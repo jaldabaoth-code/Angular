@@ -7,7 +7,7 @@ describe('ListKittenComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ ListKittenComponent ]
+            declarations: [ListKittenComponent]
         })
         .compileComponents();
     });

@@ -7,7 +7,7 @@ describe('CreateOnomatopoeiaComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ CreateOnomatopoeiaComponent ]
+            declarations: [CreateOnomatopoeiaComponent]
         })
         .compileComponents();
     });

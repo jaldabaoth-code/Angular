@@ -1,11 +1,11 @@
 <br style="text-align:center" class="mt-5">
 <div *ngIf="pokes != undefined" class="pokemon-list-container">
-  <div *ngFor="let poke of pokes">
-    <div class="pokemonCard" (click)="sendPokemon(poke)">
-        <img width="250" class="card-img-top" alt="Pokemon sprite" src={{poke.sprites.other.home.front_default}}>
-        <div class="card-body">
-          <h5 class="card-title">{{poke.name}}</h5>
-        </div>
-      </div>
-  </div>
+    <div *ngFor="let poke of pokes">
+        <div class="pokemonCard" (click)="sendPokemon(poke)">
+            <img width="250" class="card-img-top" alt="Pokemon sprite" src={{poke.sprites.other.home.front_default}}>
+            <div class="card-body">
+                <h5 class="card-title">{{ poke.name }}</h5>
+            </div>
+          </div>
+    </div>
 </div>

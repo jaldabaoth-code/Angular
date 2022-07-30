@@ -10,12 +10,7 @@ import { CocktailService } from "./service/cocktail.service";
 export class Services1Component {
     public cocktails: Cocktail[];
 
-    constructor(public cocktailService: CocktailService) {
-       this.cocktails = this.cocktailService.getCocktails();
+    constructor(cocktailService: CocktailService) {
+        this.cocktails = cocktailService.getCocktails();
     }
 }
-
-
-
-
-

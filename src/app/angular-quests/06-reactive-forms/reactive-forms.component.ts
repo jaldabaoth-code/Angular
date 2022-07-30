@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AbstractControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { isRequiredValidator } from "./utils/idOrTitleRequired-validation";
 import { yearOfReleaseValidation } from "./utils/yearOfRelease-validation";
 
@@ -45,10 +45,8 @@ export class ReactiveFormsComponent implements OnInit {
 
     onSubmit() {
         this.submitted = true;
-        console.log("toto")
         if (this.searchForm.invalid) {
-          console.log("titi")
-            return;
+              return;
         }
         console.log(JSON.stringify(this.searchForm.value, null, 2));
     }

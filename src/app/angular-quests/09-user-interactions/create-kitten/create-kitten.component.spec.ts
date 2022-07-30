@@ -7,7 +7,7 @@ describe('CreateKittenComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ CreateKittenComponent ]
+            declarations: [CreateKittenComponent]
         })
         .compileComponents();
     });

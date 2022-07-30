@@ -7,7 +7,7 @@ describe('ReactiveFormsComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ ReactiveFormsComponent ]
+            declarations: [ReactiveFormsComponent]
         })
         .compileComponents();
     });

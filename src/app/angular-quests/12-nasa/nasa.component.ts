@@ -7,23 +7,23 @@ import { NasaService } from "./service/nasa.service";
     styleUrls: ['./nasa.component.css']
 })
 export class NasaComponent implements OnInit {
-    public imgOfTheDay: string;
-    private service: NasaService;
+    public imageOfTheDay: string;
+    private nasaService: NasaService;
+    isShowNasa = true;
 
-    constructor(public param_service: NasaService) {
-        this.service = param_service;
+    constructor(nasaService: NasaService) {
+        this.nasaService = nasaService;
     }
 
     ngOnInit(): void {
-      this.service.getImageOfTheDay().subscribe(
-        (nasaImg) => {
-          this.imgOfTheDay = nasaImg;
-        }
-      );
+        this.nasaService.getImageOfTheDay().subscribe(
+            (nasaImage) => {
+                this.imageOfTheDay = nasaImage;
+            }
+        );
     }
 
-    isShowNasa = true;
-    AfficherMasquerNasa() {
-      this.isShowNasa = !this.isShowNasa;
+    showHideNasa() {
+        this.isShowNasa = !this.isShowNasa;
     }
 }

@@ -1,7 +1,6 @@
 <div *ngIf="pokemon != undefined; ">
-  <div class="description">
-    <p>Name : {{pokemon.name}}</p>
-<!--    <img width="100" class="card-img-top" alt="Pokemon sprite" src={{pokemon.sprites.other.home.front_default}}>-->
-    <button class="btn btn-primary" (click)="deletePokemon(pokemon)">Delete</button>
-  </div>
+    <div class="description">
+        <p>Name : {{ pokemon.name }}</p>
+        <button class="btn btn-primary" (click)="deletePokemon(pokemon)">Delete</button>
+    </div>
 </div>

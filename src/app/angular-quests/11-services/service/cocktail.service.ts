@@ -10,15 +10,15 @@ import { Cocktail } from "../common/cocktail.model";
 export class CocktailService {
     private service: HttpClient;
 
-    constructor(param_service:  HttpClient) {
-        this.service = param_service;
+    constructor(paramService: HttpClient) {
+        this.service = paramService;
     }
 
     public getCocktails(): Observable<Cocktail[]> {
-        const obs1:Observable<any> = this.service.get("assets/cocktails.json");
-        const treatment = (param_data:any) => {
-            return param_data.data as Cocktail[];
+        const observableCocktails: Observable<any> = this.service.get("assets/cocktails.json");
+        const treatment = (paramData: any) => {
+            return paramData.data as Cocktail[];
         };
-        return obs1.pipe(map(treatment));
+        return observableCocktails.pipe(map(treatment));
     }
 }

@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
     templateUrl: './directives2.component.html',
     styleUrls: ['./directives2.component.css']
 })
-export class Directives2Component  {
+export class Directives2Component {
     showMovies: boolean = true;
 
     constructor() { }

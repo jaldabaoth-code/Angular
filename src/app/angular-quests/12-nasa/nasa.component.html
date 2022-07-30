@@ -1,5 +1,10 @@
-<button (click)="AfficherMasquerNasa()">Afficher Quete 12 - NASA</button>
-<div [hidden]="isShowNasa">
-  <h2>12 La NASA vous rend service !</h2>
-  <img src="{{ imgOfTheDay }}" />
+<h2 class="text-center">Quest Angular 12</h2>
+<h3 class="text-center">Nasa</h3>
+<hr>
+<div class="d-flex align-items-center flex-column">
+    <button class="btn btn-dark col-6" (click)="showHideNasa()">Display/Hide The Quest</button>
+    <div class="mt-5" [hidden]="isShowNasa">
+        <h4 class="text-center">Nasa's picture of the day</h4>
+        <img class="my-2" src="{{ imageOfTheDay }}" />
+    </div>
 </div>

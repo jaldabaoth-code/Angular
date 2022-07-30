@@ -1,23 +1,23 @@
 import { Component, Input } from '@angular/core';
 import { PokedexService } from '../../shared/service/pokedex.service';
 import { HttpClient } from  '@angular/common/http';
-import { PokemonNames } from '../../shared/models/pokemon-names.model';
+import { Pokemon } from '../../shared/models/pokemon.model';
 
 @Component({
-  selector: 'app-pokemon-detail',
-  templateUrl: './pokemon-detail.component.html',
-  styleUrls: ['./pokemon-detail.component.css']
+    selector: 'app-pokemon-detail',
+    templateUrl: './pokemon-detail.component.html',
+    styleUrls: ['./pokemon-detail.component.css']
 })
 export class PokemonDetailComponent {
-  @Input()
-  public pokemon: PokemonNames | undefined;
-  private service: HttpClient;
+    @Input()
+    public pokemon: Pokemon | undefined;
+    private service: HttpClient;
 
-  constructor(private pokedexService : PokedexService, param_service: HttpClient){
-    this.service  =  param_service;
-  }
+    constructor(private pokedexService : PokedexService, paramService: HttpClient){
+        this.service = paramService;
+    }
 
-  deletePokemon(pokemon: PokemonNames){
-    this.pokedexService.deletePokemon(pokemon);
-  }
+    deletePokemon(pokemon: Pokemon){
+        this.pokedexService.deletePokemon(pokemon);
+    }
 }

@@ -7,7 +7,7 @@ describe('BindingComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ BindingComponent ]
+            declarations: [BindingComponent]
         })
         .compileComponents();
     });

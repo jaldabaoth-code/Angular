@@ -7,18 +7,16 @@ import { DrivenFormsComponent} from "./angular-quests/05-driven-forms/driven-for
 import { ReactiveFormsComponent } from "./angular-quests/06-reactive-forms/reactive-forms.component";
 import { InputComponent } from "./angular-quests/07-input/input.component";
 import { OutputComponent} from "./angular-quests/08-output/output.component";
-import { ListKittenComponent} from "./angular-quests/09-user-interactions/list-kitten/list-kitten.component";
-
-
+import { UserInteractionsComponent } from "./angular-quests/09-user-interactions/user-interactions.component";
 import { Services1Component} from "./angular-quests/10-services1/services1.component";
 import { Services2Component} from "./angular-quests/11-services/services2.component";
 import { NasaComponent } from "./angular-quests/12-nasa/nasa.component";
+
 import { CreatePokemonComponent } from "./angular-quests/13-pokedex/pages/create-pokemon/create-pokemon.component";
 import { PokedexPageComponent } from "./angular-quests/13-pokedex/pages/pokedex-page/pokedex-page.component";
-import { UserInteractionsComponent } from "./angular-quests/09-user-interactions/user-interactions.component";
+
 
 import { SignUpComponent } from './menu/sign-up/sign-up.component';
-import { SearchComponent } from "./search/search.component";
 import { GameListComponent } from "./game-list/game-list.component";
 
 
@@ -34,21 +32,18 @@ const ROUTES: Routes = [
     { path: 'input', component: InputComponent },
     { path: 'output', component: OutputComponent },
     { path: 'user-interactions', component: UserInteractionsComponent },
-
     { path: 'services1', component: Services1Component },
     { path: 'services2', component: Services2Component },
-
-    { path: 'sign-up', component: SignUpComponent },
-    { path: '', component: BindingComponent },
-    { path: 'search', component: SearchComponent },
-
-
     { path: 'nasa', component: NasaComponent },
 
-    { path: 'game-list', component: GameListComponent },
+
     { path:"pokedex", component: PokedexPageComponent },
     { path:"create", component:CreatePokemonComponent },
-    { path: "", component: PokedexPageComponent }
+    { path: "", component: PokedexPageComponent },
+
+
+    { path: 'sign-up', component: SignUpComponent },
+    { path: 'game-list', component: GameListComponent }
 ];
 
 export { ROUTES };

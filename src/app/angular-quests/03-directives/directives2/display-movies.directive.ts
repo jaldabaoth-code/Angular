@@ -6,7 +6,8 @@ import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 export class DisplayMoviesDirective {
     constructor(private tplRef: TemplateRef<any>, private vwRef: ViewContainerRef) { }
 
-    @Input() set appDisplayMovies(condition: boolean) {
+    @Input()
+    set appDisplayMovies(condition: boolean) {
         if (condition) {
             this.vwRef.createEmbeddedView(this.tplRef);
         } else {

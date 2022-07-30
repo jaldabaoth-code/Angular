@@ -7,7 +7,7 @@ describe('Directives1Component', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ Directives1Component ]
+            declarations: [Directives1Component]
         })
         .compileComponents();
     });

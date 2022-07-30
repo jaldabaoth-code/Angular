@@ -1,13 +1,13 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { Services1Component} from "./services1.component";
+import { Services1Component } from "./services1.component";
 
-describe('CocktailListComponent', () => {
+describe('Services1Component', () => {
     let component: Services1Component;
     let fixture: ComponentFixture<Services1Component>;
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ Services1Component ]
+            declarations: [Services1Component]
         })
         .compileComponents();
     });

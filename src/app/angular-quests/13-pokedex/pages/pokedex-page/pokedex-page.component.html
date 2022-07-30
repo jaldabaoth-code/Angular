@@ -1,18 +1,20 @@
-<div class="container-fluid d-flex">
-  <app-pokemon-list [pokemons]="listPokemonNames" (pokemonClick)="retrievePokemonDetails($event)"></app-pokemon-list>
-  <app-pokemon-detail [pokemon]="pokemon"></app-pokemon-detail>
-</div>
-
-<br/>
 <nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" routerLink="">
-      <img src="../assets/img/pokedexLogo.png" alt="" width="auto" height="70" class="d-inline-block align-text-top">
-    </a>
-    <div class="menu">
-      <a routerLink="/create">Create your pokemon</a>
-      <a routerLink="/pokedex">Pokedex</a>
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="">
+            <img src="../assets/img/pokedexLogo.png" alt="" width="auto" height="70" class="d-inline-block align-text-top">
+        </a>
+        <div class="menu">
+            <a routerLink="/create">Create your pokemon</a>
+            <a routerLink="/pokedex">Pokedex</a>
+        </div>
     </div>
-  </div>
 </nav>
 <br/>
+<div class="container-fluid d-flex">
+    <div class="col-9">
+        <app-pokemon-list [pokemons]="listPokemonNames" (pokemonClick)="retrievePokemonDetails($event)"></app-pokemon-list>
+    </div>
+    <div class="col-3">
+        <app-pokemon-detail [pokemon]="pokemon"></app-pokemon-detail>
+    </div>
+</div>

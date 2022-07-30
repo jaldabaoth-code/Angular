@@ -7,7 +7,7 @@ describe('UserKittenComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ UserKittenComponent ]
+            declarations: [UserKittenComponent]
         })
         .compileComponents();
     });
