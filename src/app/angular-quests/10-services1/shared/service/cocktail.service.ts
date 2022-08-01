@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Cocktail } from "../common/cocktail.model";
+import { Cocktail } from "../models/cocktail.model";
 
 @Injectable({
     providedIn: 'root'

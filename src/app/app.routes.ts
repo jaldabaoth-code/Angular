@@ -12,12 +12,13 @@ import { Services1Component} from "./angular-quests/10-services1/services1.compo
 import { Services2Component} from "./angular-quests/11-services/services2.component";
 import { NasaComponent } from "./angular-quests/12-nasa/nasa.component";
 
-import { CreatePokemonComponent } from "./angular-quests/13-pokedex/pages/create-pokemon/create-pokemon.component";
-import { PokedexPageComponent } from "./angular-quests/13-pokedex/pages/pokedex-page/pokedex-page.component";
+import { CreatePokemonComponent } from "./angular-quests/13-pokedex/components/create-pokemon/create-pokemon.component";
+import { PokedexPageComponent } from "./angular-quests/13-pokedex/pokedex-page.component";
 
 
 import { SignUpComponent } from './menu/sign-up/sign-up.component';
 import { GameListComponent } from "./game-list/game-list.component";
+
 
 
 
@@ -38,6 +39,7 @@ const ROUTES: Routes = [
 
 
     { path:"pokedex", component: PokedexPageComponent },
+
     { path:"create", component:CreatePokemonComponent },
     { path: "", component: PokedexPageComponent },
 

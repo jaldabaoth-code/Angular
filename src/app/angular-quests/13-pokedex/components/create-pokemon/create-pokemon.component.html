@@ -1,0 +1,11 @@
+<app-pokedex-nav></app-pokedex-nav>
+<div class="d-flex justify-content-center mt-5">
+    <div class="col-6" >
+        <form #pokemonForm="ngForm" (ngSubmit)="pokemonForm.valid && createPokemon()">
+            <label class="form-label" for="pokemonName">Write a Pokemon name (In English) : </label>
+            <input class="form-control" id="pokemonName" type="text" name="pokemonName" [(ngModel)]="pokemonName" required>
+            <button class="button btn btn-success mt-3 col" type="submit">Add a new pokemon to your Pokedex</button>
+        </form>
+    </div>
+</div>
+<div class="text-danger text-center mt-5" *ngIf="haveAlready">{{ pokemonName }} is already in your Pokedex</div>

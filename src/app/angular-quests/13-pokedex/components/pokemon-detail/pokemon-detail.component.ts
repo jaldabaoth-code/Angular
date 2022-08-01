@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { PokedexService } from '../../shared/service/pokedex.service';
-import { HttpClient } from  '@angular/common/http';
+import { PokedexService } from '../../shared/services/pokedex.service';
 import { Pokemon } from '../../shared/models/pokemon.model';
+import { Router } from "@angular/router";
 
 @Component({
     selector: 'app-pokemon-detail',
@@ -10,14 +10,24 @@ import { Pokemon } from '../../shared/models/pokemon.model';
 })
 export class PokemonDetailComponent {
     @Input()
-    public pokemon: Pokemon | undefined;
-    private service: HttpClient;
+    public selectedPokemon: Pokemon | undefined;
+    pokemons: any = [] ;
 
-    constructor(private pokedexService : PokedexService, paramService: HttpClient){
-        this.service = paramService;
+    constructor(private pokedexService : PokedexService, private router: Router) {
+        this.pokemons = this.pokedexService.pokemonsData;
+        // For refresh same component need add --> {onSameUrlNavigation: 'reload'} in app-routing.modules.ts <--
+        // Then this will work --> this.router.navigate(['/actualRoot']); <--
+        this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+        this.pokedexService.getPokemonsData();
     }
 
-    deletePokemon(pokemon: Pokemon){
+    deletePokemon(pokemon: Pokemon) {
         this.pokedexService.deletePokemon(pokemon);
+        for (let i = 0; i < this.pokemons.length; i++) {
+            if (this.pokemons[i].name == pokemon.name) {
+                this.pokemons.splice(i, 1);
+            }
+        }
+        this.router.navigate(['/pokedex']);
     }
 }

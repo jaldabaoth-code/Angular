@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {NasaService} from "./angular-quests/12-nasa/service/nasa.service";
+import {NasaService} from "./angular-quests/12-nasa/services/nasa.service";
+import {PokedexService} from "./angular-quests/13-pokedex/shared/services/pokedex.service";
 
 @Component({
   selector: 'app-root',
@@ -12,20 +13,21 @@ export class AppComponent {
 
   title = 'Bonjour !';
 /*  public imgOfTheDay: string;
-  private service: NasaService;*/
+  private services: NasaService;*/
 
 /*  public onomatopoeias: string[] = [];*/
 
-/*  constructor(public param_service: NasaService) {
-    this.service = param_service;
-  }*/
+  constructor(public param_service: NasaService, private pokedexService : PokedexService) {
+    //this.services = param_service;
+  }
 
   public ngOnInit():void{
-/*    this.service.getImageOfTheDay().subscribe(
+/*    this.services.getImageOfTheDay().subscribe(
       (nasaImg) => {
         this.imgOfTheDay = nasaImg;
       }
     );*/
+/*    this.pokedexService.getPokes();*/
   }
 
 /*  onReceiveNewOnomatopia($event: string) {

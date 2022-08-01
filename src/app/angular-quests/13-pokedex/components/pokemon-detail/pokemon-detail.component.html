@@ -1,6 +1,11 @@
-<div *ngIf="pokemon != undefined; ">
-    <div class="description">
-        <p>Name : {{ pokemon.name }}</p>
-        <button class="btn btn-primary" (click)="deletePokemon(pokemon)">Delete</button>
+<div *ngIf="pokemons != undefined">
+    <div *ngFor="let pokemon of pokemons">
+        <div *ngIf="pokemon != undefined">
+            <div class="d-flex flex-column align-items-center" *ngIf="pokemon?.name == selectedPokemon?.name" >
+                <h4>{{ pokemon.name | uppercase }}</h4>
+                <img width="250" class="card-img-top" alt="pokemon image" src="{{ pokemon.sprites.other.home.front_default }}">
+                <button class="btn btn-warning col" (click)="deletePokemon(selectedPokemon)">Remove from Pokedex</button>
+            </div>
+        </div>
     </div>
 </div>

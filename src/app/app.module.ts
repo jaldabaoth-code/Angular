@@ -27,11 +27,10 @@ import { Services1Component } from "./angular-quests/10-services1/services1.comp
 import { Services2Component } from "./angular-quests/11-services/services2.component";
 import { NasaComponent } from "./angular-quests/12-nasa/nasa.component";
 
-
 import { PokemonListComponent} from "./angular-quests/13-pokedex/components/pokemon-list/pokemon-list.component";
 import { PokemonDetailComponent } from "./angular-quests/13-pokedex/components/pokemon-detail/pokemon-detail.component";
-import { PokedexPageComponent } from "./angular-quests/13-pokedex/pages/pokedex-page/pokedex-page.component";
-import { CreatePokemonComponent } from "./angular-quests/13-pokedex/pages/create-pokemon/create-pokemon.component";
+import { PokedexPageComponent } from "./angular-quests/13-pokedex/pokedex-page.component";
+import { CreatePokemonComponent } from "./angular-quests/13-pokedex/components/create-pokemon/create-pokemon.component";
 
 
 
@@ -41,7 +40,8 @@ import { LogInterceptor } from "../interceptor/core/log.interceptor";
 import { NavbarComponent } from './navbar/navbar.component';
 import { GameListComponent } from './game-list/game-list.component';
 import { GameComponent } from './game/game.component';
-import { PokedexComponent } from './pokedex/pokedex.component';
+import { PokedexNavComponent } from './angular-quests/13-pokedex/components/pokedex-nav/pokedex-nav.component';
+
 
 
 
@@ -49,8 +49,8 @@ import { PokedexComponent } from './pokedex/pokedex.component';
 
 @NgModule({
     declarations: [AppComponent, ComponentsComponent, BindingComponent, Directives1Component, Directives2Component, DisplayMoviesDirective, StylesDirective, DrivenFormsComponent, ReactiveFormsComponent, InputComponent, DeveloperComponent, SkillComponent, OutputComponent, CreateOnomatopoeiaComponent, UserInteractionsComponent, CreateKittenComponent, UserKittenComponent, ListKittenComponent, Services1Component, Services2Component, NasaComponent,
-      SignUpComponent, MenuComponent, PokemonListComponent, PokemonDetailComponent, PokedexPageComponent, CreatePokemonComponent, NavbarComponent, GameListComponent, GameComponent, PokedexComponent],
-    imports: [HttpClientModule, BrowserModule, FormsModule, ReactiveFormsModule, RouterModule.forRoot(ROUTES), AppRoutingModule],
+      SignUpComponent, MenuComponent, PokemonListComponent, PokemonDetailComponent, PokedexPageComponent, CreatePokemonComponent, NavbarComponent, GameListComponent, GameComponent, PokedexNavComponent],
+    imports: [HttpClientModule, BrowserModule, FormsModule, ReactiveFormsModule, RouterModule.forRoot(ROUTES, {onSameUrlNavigation: 'reload'}), AppRoutingModule],
     providers: [
         {
             provide: HTTP_INTERCEPTORS,

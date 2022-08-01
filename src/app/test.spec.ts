@@ -1,7 +1,7 @@
 /*
 import { TestBed, async } from '@angular/core/testing';
 import { Services1Component } from './cocktail-list/cocktail-list.component';
-import { CocktailService } from './cocktail-list/service/cocktail.service';
+import { CocktailService } from './cocktail-list/services/cocktail.services';
 
 describe('Quest Test Suite', () => {
   beforeEach(async(() => {
@@ -12,14 +12,14 @@ describe('Quest Test Suite', () => {
     }).compileComponents();
   }));
 
-  fit('service should be created', () => {
-    const service: CocktailService = TestBed.inject(CocktailService);
-    expect(service).toBeTruthy();
+  fit('services should be created', () => {
+    const services: CocktailService = TestBed.inject(CocktailService);
+    expect(services).toBeTruthy();
   });
 
-  fit('service should have a "getCocktails" method which returns at least one object', () => {
-    const service: CocktailService = TestBed.inject(CocktailService);
-    const tab = service.getCocktails();
+  fit('services should have a "getCocktails" method which returns at least one object', () => {
+    const services: CocktailService = TestBed.inject(CocktailService);
+    const tab = services.getCocktails();
     expect(tab.length).toBeGreaterThan(0);
   });
 
@@ -56,13 +56,13 @@ describe('Quest Test Suite', () => {
 });
 */
 
-import { HttpClientModule } from '@angular/common/http';
+/*import { HttpClientModule } from '@angular/common/http';
 import { async, TestBed } from '@angular/core/testing';
 import { BrowserModule } from '@angular/platform-browser';
 import { Observable, of } from 'rxjs';
 
 import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
-import {CocktailService} from "./cocktail-list2/service/cocktail.service";
+import {CocktailService} from "./cocktail-list2/services/cocktail.services";
 
 
 describe('Quest Test Suite', () => {
@@ -75,12 +75,12 @@ describe('Quest Test Suite', () => {
     }).compileComponents();
   }));
 
-  fit('service should be created', () => {
+  fit('services should be created', () => {
     const service: CocktailService = TestBed.inject(CocktailService);
     expect(service).toBeTruthy();
   });
 
-  fit('service should have a "getCocktails" method which returns an Observable<Cocktail[]> object', () => {
+  fit('services should have a "getCocktails" method which returns an Observable<Cocktail[]> object', () => {
     const service: CocktailService = TestBed.inject(CocktailService);
     service.getCocktails().subscribe(
       (cocktails: any[]) => {
@@ -131,4 +131,4 @@ describe('Quest Test Suite', () => {
       }
     )
   );
-});
+});*/

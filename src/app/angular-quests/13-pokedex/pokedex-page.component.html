@@ -1,0 +1,9 @@
+<app-pokedex-nav></app-pokedex-nav>
+<div class="container-fluid d-flex mt-5">
+    <div class="col-9">
+        <app-pokemon-list (pokemonSelected)="retrievePokemonDetails($event)"></app-pokemon-list>
+    </div>
+    <div class="col-3">
+        <app-pokemon-detail [selectedPokemon]="pokemon"></app-pokemon-detail>
+    </div>
+</div>

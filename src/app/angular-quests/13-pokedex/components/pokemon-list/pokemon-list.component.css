@@ -1,18 +1,11 @@
-.pokemon-list-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1rem 3rem;
-}
-
 .pokemonCard {
-    width : 13rem;
-    margin: 2rem 1rem;
+    width : 17rem;
     position: relative;
     cursor: pointer;
 }
 
 .pokemonCard:hover > .card-img-top {
-    animation: cardHover 300ms ease-in-out;
+    animation: cardHover 500ms ease-in-out;
 }
 
 @keyframes cardHover {
@@ -21,11 +14,11 @@
     }
 
     50% {
-        transform: translateY(-5px);
+        transform: translateY(-10px);
     }
 }
 
-.card-body {
+.cardBody {
     width: 100%;
     padding : .2rem;
     backdrop-filter: blur(3px);
@@ -35,8 +28,4 @@
     position: absolute;
     bottom : 0;
     transform: translateY(20px);
-}
-
-.btn {
-    font-size: .7rem;
 }
