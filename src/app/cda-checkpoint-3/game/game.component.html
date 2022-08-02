@@ -1,0 +1,12 @@
+<div *ngIf="selectedGame != undefined" class="d-flex flex-column align-items-center">
+    <h4 class="text-center">The Selected Game</h4>
+    <div class="gameContainer col-8 d-flex justify-content-center mb-5 p-3">
+        <img class="col-8" alt="game image" src="{{ selectedGame.background_image }}">
+        <div class="gameInformation col-3 mx-0 px-2 py-3">
+            <p>Id : {{ selectedGame.id }}</p>
+            <p>Name : {{ selectedGame.name }}</p>
+            <p>Released : {{ selectedGame.released }}</p>
+            <p>Rating : {{ selectedGame.rating }}</p>
+        </div>
+    </div>
+</div>

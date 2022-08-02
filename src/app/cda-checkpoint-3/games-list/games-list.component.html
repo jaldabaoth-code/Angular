@@ -1,0 +1,18 @@
+<div *ngIf="gameForBackground != undefined">
+    <div [ngStyle]="{'background-image': 'url(' + gameForBackground.background_image + ')'}">
+        <h2 class="text-center">Checkpoint 03 - WCS CDA Java</h2>
+        <h3 class="text-center">Angular</h3>
+        <hr>
+        <h4 class="text-center">List Of Games</h4>
+        <div class="row justify-content-center mt-3 col mx-0 px-0">
+            <img (click)="scroll(gameInformation)" *ngFor="let game of gamesData" (click)="selectGame(game)" class="cover rounded m-4 col-2" alt="game image" src="{{ game.background_image }}">
+        </div>
+        <div *ngIf="selectedGame != undefined" class="d-flex justify-content-center my-5">
+            <button class="btn btn-success mx-2" (click)="changeBackground()">Choose Game As Background</button>
+            <button class="btn btn-warning" (click)="refreshComponent()">Refresh The Page</button>
+        </div>
+        <div #gameInformation>
+            <app-game [selectedGame]="selectedGame"></app-game>
+        </div>
+    </div>
+</div>

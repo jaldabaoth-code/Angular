@@ -1,0 +1,19 @@
+img {
+    width: 100%;
+    height: 370px;
+}
+
+p {
+    font-weight: bold;
+}
+
+.gameInformation {
+    display: block;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+.gameContainer {
+    display: block;
+    border: 1px solid black;
+}

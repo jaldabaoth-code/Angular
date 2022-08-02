@@ -7,13 +7,13 @@ import { Pokemon } from '../models/pokemon.model';
     providedIn: 'root'
 })
 export class PokedexService {
-    private http: HttpClient;
+    private service: HttpClient;
     pokemons: Pokemon[];
     pokemonsData: any = [];
     fullUrl: string;
 
     constructor(paramService: HttpClient) {
-        this.http = paramService;
+        this.service = paramService;
         this.pokemons = POKEMONSNAMES;
     }
 
@@ -33,7 +33,7 @@ export class PokedexService {
     getPokemonsData(): void {
         for (let i = 0; i < this.pokemons.length; i++) {
             this.fullUrl = 'https://pokeapi.co/api/v2/pokemon/' + this.pokemons[i].name.toLowerCase();
-            this.http.get(this.fullUrl).subscribe(data =>
+            this.service.get(this.fullUrl).subscribe(data =>
                 this.pokemonsData[i]=data
             );
         }

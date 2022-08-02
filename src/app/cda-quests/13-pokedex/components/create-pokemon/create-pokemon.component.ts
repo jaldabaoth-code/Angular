@@ -13,7 +13,7 @@ export class CreatePokemonComponent {
 
     constructor(private pokedexService: PokedexService, private router: Router) { }
 
-    createPokemon(){
+    createPokemon() {
         for (let pokemon of this.pokedexService.pokemons) {
             if (this.pokemonName.toLowerCase() == pokemon.name.toLowerCase()) {
                 this.haveAlready = true;
