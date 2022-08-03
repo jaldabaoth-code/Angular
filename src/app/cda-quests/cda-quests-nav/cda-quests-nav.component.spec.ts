@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { NavbarComponent } from './navbar.component';
+import { CdaQuestsNavComponent } from './cda-quests-nav.component';
 
-describe('NavbarComponent', () => {
-    let component: NavbarComponent;
-    let fixture: ComponentFixture<NavbarComponent>;
+describe('CdaQuestsNavComponent', () => {
+    let component: CdaQuestsNavComponent;
+    let fixture: ComponentFixture<CdaQuestsNavComponent>;
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ NavbarComponent ]
+            declarations: [ CdaQuestsNavComponent ]
         })
         .compileComponents();
     });
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(NavbarComponent);
+        fixture = TestBed.createComponent(CdaQuestsNavComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

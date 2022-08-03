@@ -1,0 +1,23 @@
+<div *ngIf="selectedGame != undefined" class="d-flex flex-column align-items-center">
+    <h4 class="text-center">The Selected Game</h4>
+    <div class="gameContainer col-8 d-flex justify-content-center mb-5 p-3">
+        <img class="col-8" alt="game image" src="{{ selectedGame.background_image }}">
+        <div class="gameInformation col-3 mx-0 px-2 py-3">
+            <p>Id : {{ selectedGame.id }}</p>
+            <p>Name : {{ selectedGame.name }}</p>
+            <p>Released : {{ selectedGame.released }}</p>
+            <p>Rating : {{ selectedGame.rating }}/5</p>
+            <div class="d-flex justify-content-start mx-0 px-0">
+                <p class="col-4 px-0 mx-0">Genres : </p>
+                <div>
+                    <div class="col-8 justify-content-start mx-0 px-0" *ngFor="let genre of selectedGame?.genres">{{ genre.name }}</div>
+                </div>
+            </div>
+            <p>Video : </p>
+            <video class="m-0 p-0" width="100%" height="135" controls="controls">
+                <source *ngIf="selectedGame?.clip.clip" src="{{ selectedGame?.clip.clip }}" type="video/mp4" />
+                <p>Your browser does not support the video</p>
+            </video>
+        </div>
+    </div>
+</div>

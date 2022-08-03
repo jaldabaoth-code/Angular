@@ -8,9 +8,9 @@ import { Cocktail } from "./shared/models/cocktail.model";
     styleUrls: ['./services2.component.css']
 })
 export class Services2Component implements OnInit {
-    title: string = '';
-    cocktails: Cocktail[];
+    public cocktails: Cocktail[] = [];
     private cocktailService: CocktailService;
+    public title: string = '';
 
     constructor(cocktailService: CocktailService) {
         this.cocktailService = cocktailService;

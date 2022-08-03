@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item font-weight-bold">
+                    <a [routerLink]="['/components']" [routerLinkActive]="['active']" class="nav-link font-weight-bold">Components</a>
+                </li>
+                <li class="nav-item font-weight-bold">
+                    <a [routerLink]="['/binding']" [routerLinkActive]="['active']" class="nav-link font-weight-bold">Binding</a>
+                </li>
+                <li class="nav-item font-weight-bold">
+                    <a [routerLink]="['/directives1']" [routerLinkActive]="['active']" class="nav-link font-weight-bold">Directives 1</a>
+                </li>
+                <li class="nav-item font-weight-bold">
+                    <a [routerLink]="['/directives2']" [routerLinkActive]="['active']" class="nav-link font-weight-bold">Directives 2</a>
+                </li>
+                <li class="nav-item">
+                    <a [routerLink]="['/router']" [routerLinkActive]="['active']" class="nav-link font-weight-bold">Router</a>
+                </li>
+                <li class="nav-item font-weight-bold">
+                    <a [routerLink]="['/driven-forms']" [routerLinkActive]="['active']" class="nav-link font-weight-bold">Driven Forms</a>
+                </li>
+                <li class="nav-item font-weight-bold">
+                    <a [routerLink]="['/reactive-forms']" [routerLinkActive]="['active']" class="nav-link font-weight-bold">Reactive Forms</a>
+                </li>
+                <li class="nav-item">
+                    <a [routerLink]="['/input']" [routerLinkActive]="['active']" class="nav-link font-weight-bold">Input</a>
+                </li>
+                <li class="nav-item">
+                    <a [routerLink]="['/output']" [routerLinkActive]="['active']" class="nav-link font-weight-bold">Output</a>
+                </li>
+                <li class="nav-item">
+                    <a [routerLink]="['/user-interactions']" [routerLinkActive]="['active']" class="nav-link font-weight-bold">User Interactions</a>
+                </li>
+                <li class="nav-item">
+                    <a [routerLink]="['/services1']" [routerLinkActive]="['active']" class="nav-link font-weight-bold">Service 1</a>
+                </li>
+                <li class="nav-item">
+                    <a [routerLink]="['/services2']" [routerLinkActive]="['active']" class="nav-link font-weight-bold">Service 2</a>
+                </li>
+                <li class="nav-item">
+                    <a [routerLink]="['/nasa']" [routerLinkActive]="['active']" class="nav-link font-weight-bold">Nasa</a>
+                </li>
+                <li class="nav-item">
+                    <a [routerLink]="['/pokedex']" [routerLinkActive]="['active']" [class.active]="router.url==='/create-pokemon'" class="nav-link font-weight-bold">Pokedex</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

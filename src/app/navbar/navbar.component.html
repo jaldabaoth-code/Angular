@@ -3,52 +3,17 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item font-weight-bold">
-                    <a routerLink="/components" class="nav-link font-weight-bold">Components</a>
+                    <a routerLink="/" [class.active]="router.url==='/'" class="nav-link font-weight-bold h4">Home</a>
                 </li>
                 <li class="nav-item font-weight-bold">
-                    <a routerLink="/binding" class="nav-link font-weight-bold">Binding</a>
+                    <a routerLink="/components" [ngClass]="(router.url === '/games-list' || router.url === '/sign-up' || router.url === '/')? '' :'active'" class="nav-link font-weight-bold h4">CDA Quests</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/games-list" [routerLinkActive]="['active']" class="nav-link font-weight-bold h4">CDA Checkpoint 2</a>
                 </li>
                 <li class="nav-item font-weight-bold">
-                    <a routerLink="/directives1" class="nav-link font-weight-bold">Directives1</a>
+                    <a routerLink="/sign-up" [routerLinkActive]="['active']" class="nav-link font-weight-bold h4">Tutorials</a>
                 </li>
-                <li class="nav-item font-weight-bold">
-                    <a routerLink="/directives2" class="nav-link font-weight-bold">Directives2</a>
-                </li>
-                <li class="nav-item font-weight-bold">
-                    <a routerLink="/driven-forms" class="nav-link font-weight-bold">Driven Forms</a>
-                </li>
-                <li class="nav-item font-weight-bold">
-                    <a routerLink="/reactive-forms" class="nav-link font-weight-bold">Reactive Forms</a>
-                </li>
-                <li class="nav-item">
-                    <a routerLink="/input" class="nav-link font-weight-bold">Input</a>
-                </li>
-                <li class="nav-item">
-                    <a routerLink="/output" class="nav-link font-weight-bold">Output</a>
-                </li>
-                <li class="nav-item">
-                    <a routerLink="/user-interactions" class="nav-link font-weight-bold">User Interactions</a>
-                </li>
-                <li class="nav-item">
-                    <a routerLink="/services1" class="nav-link font-weight-bold">Service 1</a>
-                </li>
-                <li class="nav-item">
-                    <a routerLink="/services2" class="nav-link font-weight-bold">Service 2</a>
-                </li>
-                <li class="nav-item">
-                    <a routerLink="/nasa" class="nav-link font-weight-bold">Nasa</a>
-                </li>
-                <li class="nav-item">
-                    <a routerLink="/pokedex" class="nav-link font-weight-bold">Pokedex</a>
-                </li>
-                <li class="nav-item">
-                    <a routerLink="/games-list" class="nav-link font-weight-bold">Games List</a>
-                </li>
-
-                <li class="nav-item font-weight-bold">
-                    <a routerLink="/sign-up" class="nav-link font-weight-bold">SIGN-UP</a>
-                </li>
-
             </ul>
         </div>
     </div>
