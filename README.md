@@ -10,7 +10,7 @@
 0. Clone the repo from GitHub : `git clone git@github.com:jaldabaoth-code/Angular`
 1. Enter to Java directory : `cd Angular/java`
 2. Install Maven dependencies : `mvn install`
-3. Run Spring Boot : `spring-boot:run`
+3. Run Spring Boot : `mvn spring-boot:run`
 4. Enter to Angular directory : `cd ../angular`
 5. Install Angular dependencies : `npm install`
 6. Run the server : `ng serve -o`
