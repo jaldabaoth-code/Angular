@@ -1,6 +1,6 @@
 <h1>Angular (Mini Projects/Quests, WCS CDA Java)</h1>
 
-### There are PHP/HTML/CSS/SCSS/JS "Quests" and "Workshops" we did during WCS Web PHP
+### There are Angular "Quests" and "Workshops" we did during WCS CDA Java
 
 
 ---
@@ -8,18 +8,16 @@
 ### Steps
 
 0. Clone the repo from GitHub : `git clone git@github.com:jaldabaoth-code/Angular`
-1. Enter Java directory : `cd Angular/java`
+1. Enter to Java directory : `cd Angular/java`
 2. Install Maven dependencies : `mvn install`
 3. Run Spring Boot : `spring-boot:run`
-4. Enter Angular directory : `cd ../angular`
+4. Enter to Angular directory : `cd ../angular`
 5. Install Angular dependencies : `npm install`
 6. Run the server : `ng serve -o`
 
 ---
 
 ## The Links
-
-#### Angular Quests
 
 1. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-quests">Angular Quests</a>
 
@@ -28,10 +26,10 @@
 3. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-quests/02-binding">Angular Quest 02 - Binding</a>
 
 4. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-quests/03-directives">Angular Quest 03 - Directives</a>
-    - <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-quests/directives1">Angular Quest 03.1 - Directives</a>
-    - <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-quests/directives2">Angular Quest 03.2 - Directives</a>
+    - <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-quests/03-directives/directives1">Angular Quest 03.1 - Directives 1</a>
+    - <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-quests/03-directives/directives2">Angular Quest 03.2 - Directives 2</a>
 
-5. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-quests/04-router">Angular Quest 04 Router</a>
+5. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-quests/04-router">Angular Quest 04 - Router</a>
 
 6. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-quests/05-driven-forms">Angular Quest 05 - Driven Forms</a>
 
@@ -41,7 +39,7 @@
 
 9. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-quests/08-output">Angular Quest 08 - Output</a>
 
-10. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-quests/09-user-interactions">Angular Quest 09 User - Interactions</a>
+10. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-quests/09-user-interactions">Angular Quest 09 - User Interactions</a>
 
 11. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-quests/10-services1">Angular Quest 10 - Services 1</a>
 
@@ -53,11 +51,11 @@
 
 15. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-quests/17-interceptor">Angular Quest 17 - Interceptor</a>
 
-16. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-checkpoint-2">WCS CDA Java Checkpoint 2 (Angular)</a>
+16. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-checkpoint-2">WCS CDA Java - Checkpoint 2 (Angular)</a>
 
 17. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/tutorials/reactive-forms/">Tutorial - Reactive Forms</a>
 
-18. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-workshops/spring-angular-security">Workshop - Spring-angular-security </a>
+18. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/cda-workshops/spring-angular-security">Workshop - Spring Angular Security</a>
 
 ---
 
