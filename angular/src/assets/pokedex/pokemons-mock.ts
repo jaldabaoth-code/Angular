@@ -2,32 +2,32 @@ import { Pokemon } from "../../app/cda-quests/13-pokedex/shared/models/pokemon.m
 
 export const POKEMONSNAMES: Pokemon[] = [
     {
-        name : "bulbasaur"
+        name: "bulbasaur"
     },
     {
-        name : "ivysaur"
+        name: "ivysaur"
     },
     {
-        name : "venusaur"
-    },
-
-    {
-        name : "charmander"
-    },
-    {
-        name : "charmeleon"
-    },
-    {
-        name : "charizard"
+        name: "venusaur"
     },
 
     {
-        name : "squirtle"
+        name: "charmander"
     },
     {
-        name : "wartortle"
+        name: "charmeleon"
     },
     {
-        name : "blastoise"
+        name: "charizard"
+    },
+
+    {
+        name: "squirtle"
+    },
+    {
+        name: "wartortle"
+    },
+    {
+        name: "blastoise"
     }
 ]

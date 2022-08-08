@@ -24,7 +24,6 @@ public class SimpleController {
     Map<String, String> message(String messageContent) {
         Map<String, String> result = new HashMap<>();
         result.put("message", messageContent);
-
         return result;
     }
 }

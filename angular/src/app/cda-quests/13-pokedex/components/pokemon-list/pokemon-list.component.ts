@@ -12,7 +12,7 @@ export class PokemonListComponent {
     @Output()
     public pokemonSelected: EventEmitter<Pokemon> = new EventEmitter<Pokemon>();
 
-    constructor(private pokedexService : PokedexService) {
+    constructor(private pokedexService: PokedexService) {
         this.pokemons = this.pokedexService.pokemonsData;
         this.pokedexService.getPokemonsData();
     }

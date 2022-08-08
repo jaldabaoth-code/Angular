@@ -12,7 +12,7 @@ export class LogInterceptor implements HttpInterceptor {
         //I am passing the request after angular's hidden interceptors
         // and I return this result for the query to take place --> return  next.handle(req);
         // The pipe allows you to add actions to perform when the observable is resolved
-        return  next.handle(req).pipe(
+        return next.handle(req).pipe(
             // Tap is an observable that indicates: I do actions without modifying the answer
             tap((response) => {
                 // I make sure that it is indeed a http response

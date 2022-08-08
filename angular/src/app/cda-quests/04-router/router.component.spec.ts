@@ -7,7 +7,7 @@ describe('MenuComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ RouterComponent ]
+            declarations: [RouterComponent]
         })
         .compileComponents();
     });

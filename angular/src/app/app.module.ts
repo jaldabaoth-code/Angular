@@ -39,8 +39,8 @@ import { LogInterceptor } from "./cda-quests/17-interceptor/core/log.interceptor
 import { GamesListComponent } from './cda-checkpoint-2/games-list/games-list.component';
 import { GameComponent } from './cda-checkpoint-2/game/game.component';
 import { SignUpComponent } from './tutorials/reactive-forms/sign-up/sign-up.component';
-import { SpringRequestComponent } from './cda-worksohps/spring-request/spring-request.component';
-import { AuthenticationComponent } from './cda-worksohps/authentication/authentication.component';
+import { SpringRequestComponent } from './cda-workshops/spring-angular-security/spring-request/spring-request.component';
+import { AuthenticationComponent } from './cda-workshops/spring-angular-security/authentication/authentication.component';
 
 @NgModule({
     declarations: [AppComponent, NavbarComponent, HomeComponent, CdaQuestsNavComponent, ComponentsComponent, BindingComponent, Directives1Component, Directives2Component, DisplayMoviesDirective, StylesDirective, RouterComponent, DrivenFormsComponent, ReactiveFormsComponent, InputComponent, DeveloperComponent, SkillComponent, OutputComponent, CreateOnomatopoeiaComponent, UserInteractionsComponent, CreateKittenComponent, UserKittenComponent, ListKittenComponent, Services1Component, Services2Component, NasaComponent, PokedexPageComponent, PokedexNavComponent, CreatePokemonComponent, PokemonListComponent, PokemonDetailComponent, GamesListComponent, GameComponent, SignUpComponent, SpringRequestComponent, AuthenticationComponent],

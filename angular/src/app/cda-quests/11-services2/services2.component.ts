@@ -16,7 +16,7 @@ export class Services2Component implements OnInit {
         this.cocktailService = cocktailService;
     }
 
-    public ngOnInit():void {
+    public ngOnInit(): void {
         this.cocktailService.getCocktails().subscribe((cocktailsData) => {
             this.cocktails = cocktailsData;
         });

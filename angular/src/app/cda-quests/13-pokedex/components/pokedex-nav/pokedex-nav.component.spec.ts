@@ -7,7 +7,7 @@ describe('PokedexNavComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ PokedexNavComponent ]
+            declarations: [PokedexNavComponent]
         })
         .compileComponents();
     });

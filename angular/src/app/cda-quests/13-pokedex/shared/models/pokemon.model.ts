@@ -1,5 +1,5 @@
 export class Pokemon {
-    public name : string
+    public name: string
 
     constructor(name: string) {
         this.name = name

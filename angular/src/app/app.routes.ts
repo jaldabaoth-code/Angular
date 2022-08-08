@@ -17,8 +17,8 @@ import { CreatePokemonComponent } from "./cda-quests/13-pokedex/components/creat
 import { PokedexPageComponent } from "./cda-quests/13-pokedex/pokedex-page.component";
 import { GamesListComponent } from "./cda-checkpoint-2/games-list/games-list.component";
 import { SignUpComponent } from './tutorials/reactive-forms/sign-up/sign-up.component';
-import { SpringRequestComponent } from "./cda-worksohps/spring-request/spring-request.component";
-import { AuthenticationComponent } from "./cda-worksohps/authentication/authentication.component";
+import { SpringRequestComponent } from "./cda-workshops/spring-angular-security/spring-request/spring-request.component";
+import { AuthenticationComponent } from "./cda-workshops/spring-angular-security/authentication/authentication.component";
 
 const ROUTES: Routes = [
     { path: '', component: HomeComponent },

@@ -7,7 +7,7 @@ import { Pokemon } from './shared/models/pokemon.model';
     styleUrls: ['./pokedex-page.component.css']
 })
 export class PokedexPageComponent {
-    pokemon : Pokemon | undefined;
+    pokemon: Pokemon | undefined;
 
     constructor() { }
 
