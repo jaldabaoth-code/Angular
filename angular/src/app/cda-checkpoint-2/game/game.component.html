@@ -8,7 +8,7 @@
             <p>Released : {{ selectedGame.released }}</p>
             <p>Rating : {{ selectedGame.rating }}/5</p>
             <div class="d-flex justify-content-start mx-0 px-0">
-                <p class="col-4 px-0 mx-0">Genres : </p>
+                <p class="">Genres :&nbsp;</p>
                 <div>
                     <div class="col-8 justify-content-start mx-0 px-0" *ngFor="let genre of selectedGame?.genres">{{ genre.name }}</div>
                 </div>

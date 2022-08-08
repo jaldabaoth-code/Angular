@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { NavbarComponent } from './navbar.component';
+import { SpringRequestComponent } from './spring-request.component';
 
-describe('NavbarComponent', () => {
-    let component: NavbarComponent;
-    let fixture: ComponentFixture<NavbarComponent>;
+describe('SpringRequestComponent', () => {
+    let component: SpringRequestComponent;
+    let fixture: ComponentFixture<SpringRequestComponent>;
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [NavbarComponent]
+            declarations: [SpringRequestComponent]
         })
         .compileComponents();
     });
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(NavbarComponent);
+        fixture = TestBed.createComponent(SpringRequestComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

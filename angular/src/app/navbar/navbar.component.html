@@ -2,17 +2,20 @@
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item font-weight-bold">
-                    <a routerLink="/" [class.active]="router.url==='/'" class="nav-link font-weight-bold h4">Home</a>
+                <li class="nav-item font-weight-bold mx-3">
+                    <a routerLink="/" [class.active]="router.url === '/'" class="nav-link font-weight-bold h4">Home</a>
                 </li>
-                <li class="nav-item font-weight-bold">
+                <li class="nav-item font-weight-bold mx-3">
                     <a routerLink="/components" [ngClass]="(router.url === '/games-list' || router.url === '/sign-up' || router.url === '/')? '' :'active'" class="nav-link font-weight-bold h4">CDA Quests</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item font-weight-bold mx-3">
                     <a routerLink="/games-list" [routerLinkActive]="['active']" class="nav-link font-weight-bold h4">CDA Checkpoint 2</a>
                 </li>
-                <li class="nav-item font-weight-bold">
+                <li class="nav-item font-weight-bold mx-3">
                     <a routerLink="/sign-up" [routerLinkActive]="['active']" class="nav-link font-weight-bold h4">Tutorials</a>
+                </li>
+                <li class="nav-item font-weight-bold mx-3">
+                    <a routerLink="/spring-angular-security" [routerLinkActive]="['active']" class="nav-link font-weight-bold h4">Workshops</a>
                 </li>
             </ul>
         </div>
