@@ -25,7 +25,7 @@ export class AuthenticationComponent implements OnInit {
 
     onSubmit(): void {
         this.userService.username = this.registerForm.value.username;
-        this.userService.password= this.registerForm.value.username;
+        this.userService.password = this.registerForm.value.username;
         this.router.navigate(['/spring-angular-security']);
     }
 }
