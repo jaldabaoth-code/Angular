@@ -19,7 +19,8 @@ import { GamesListComponent } from "./cda-checkpoint-2/games-list/games-list.com
 import { SignUpComponent } from './tutorials/reactive-forms/sign-up/sign-up.component';
 import { SpringRequestComponent } from "./cda-workshops/spring-angular-security/spring-request/spring-request.component";
 import { AuthenticationComponent } from "./cda-workshops/spring-angular-security/authentication/authentication.component";
-import { CalculatorComponent } from "./calculator/calculator.component";
+import { CalculatorComponent } from "./cda-workshops/calculator/calculator.component";
+import { Calculator2Component } from "./cda-workshops/calculator2/calculator2.component";
 
 const ROUTES: Routes = [
     { path: '', component: HomeComponent },
@@ -43,5 +44,6 @@ const ROUTES: Routes = [
     { path: 'spring-angular-security', component: SpringRequestComponent },
     { path: 'authentication', component: AuthenticationComponent },
     { path: 'calculator', component: CalculatorComponent },
+    { path: 'calculator2', component: Calculator2Component }
 ];
 export { ROUTES };

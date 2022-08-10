@@ -5,8 +5,8 @@
     font-weight: bold;
     user-select: none;
     margin: 3px;
-
-  width: 25%;
+    width: 25%;
+    border-radius: 7px;
 }
 
 .button:hover {
@@ -22,4 +22,3 @@
     width: 100%;
     margin: 3px;
 }
-
