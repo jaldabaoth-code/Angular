@@ -6,100 +6,88 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./calculator.component.css']
 })
 export class CalculatorComponent implements OnInit {
-    operator: string;
-    operationsSave: string = '0';
-    sum: number = 0;
-    operationDone = false;
-
-    constructor() { }
+    input: string = '';
+    result: string = '';
 
     ngOnInit(): void { }
 
-    operation(number: number) {
-        // If user start with a negative number
-        if (this.sum == 0 && this.operator == '-') {
-            this.operationsSave = this.operationsSave + number;
-            this.sum = number * -1;
-            this.operator = '';
+    pressNum(num: string) {
+        //Do Not Allow . more than once
+        if (num==".") {
+            if (this.input !="" ) {
+                const lastNum=this.getLastOperand();
+                console.log(lastNum.lastIndexOf("."));
+                if (lastNum.lastIndexOf(".") >= 0) return;
+            }
+        }
+
+        // Do Not Allow 0 at beginning.
+        // Javascript will throw Octal literals are not allowed in strict mode.
+        if (num=="0") {
+            if (this.input=="" ) {
+                return;
+            }
+            const PrevKey = this.input[this.input.length - 1];
+            if (PrevKey === '/' || PrevKey === '*' || PrevKey === '-' || PrevKey === '+')  {
+                return;
+            }
+        }
+        this.input = this.input + num
+        this.calcAnswer();
+    }
+
+
+    getLastOperand() {
+        let pos:number;
+        console.log(this.input);
+        pos=this.input.toString().lastIndexOf("+");
+        if (this.input.toString().lastIndexOf("-") > pos) pos=this.input.lastIndexOf("-");
+        if (this.input.toString().lastIndexOf("*") > pos) pos=this.input.lastIndexOf("*");
+        if (this.input.toString().lastIndexOf("/") > pos) pos=this.input.lastIndexOf("/");
+        console.log('Last '+this.input.substr(pos+1))
+        return this.input.substr(pos+1);
+    }
+
+
+    pressOperator(op: string) {
+        //Do not allow operators more than once
+        const lastKey = this.input[this.input.length - 1];
+        if (lastKey === '/' || lastKey === '*' || lastKey === '-' || lastKey === '+')  {
             return;
         }
-        // Add new number to operations save
-        this.operationsSave = this.operationsSave + number;
+        this.input = this.input + op
+        this.calcAnswer();
+    }
 
-        if (this.sum != 0 && (this.operator == '' || !this.operator)) {
-            // If user want to write a multi-digit number
-            if (!this.operationDone) {
-                if (this.sum > 0) {
-                    // A positive multi-digit number
-                  this.sum = this.sum * 10 + number;
-                } else {
-                    // A negative multi-digit number
-                    this.sum = this.sum * 10 - number;
-                }
-            } else {
-                // If user want to write a number but all operations are already done
-                this.cancel();
-                this.sum = number;
-                this.operationsSave = number + '';
-                this.operationDone = false;
-            }
-        }
-        // If user want to write a single digit number
-        if (this.sum == 0) {
-            this.operationsSave = number + '';
-            this.sum = number;
-        }
-        // Operations
-        switch(this.operator) {
-            case '-': {
-                this.sum = this.sum - number;
-                this.operator = '';
-                this.operationDone = true;
-                break;
-            }
-            case '+': {
-                this.sum = this.sum +  number;
-                this.operator = '';
-                this.operationDone = true;
-                break;
-            }
-            case '*': {
-                this.sum = this.sum *  number;
-                this.operator = '';
-                break;
-            }
-            case '/': {
-                this.sum = this.sum /  number;
-                this.operationDone = true;
-                this.operator = '';
-                break;
-            }
+
+    clear() {
+        if (this.input !="" ) {
+            this.input=this.input.substr(0, this.input.length-1)
         }
     }
 
-    setOperator(operator: string) {
-        this.operationDone = false;
-        // Get last operation and change operator in "operations save" if user modified it
-        let lastOperation = this.operationsSave.slice(this.operationsSave.length - 1);
-        if (lastOperation == '-' || lastOperation == '+' || lastOperation == '/' || lastOperation == '*' || lastOperation == 'x²') {
-            this.operationsSave = this.operationsSave.slice(0, -1) + operator + '';
-        } else {
-            this.operationsSave = this.operationsSave + operator;
+    allClear() {
+        this.result = '';
+        this.input = '';
+    }
+
+    calcAnswer() {
+        let formula = this.input;
+        let lastKey = formula[formula.length - 1];
+        if (lastKey === '.')  {
+          formula=formula.substr(0,formula.length - 1);
         }
-        // Set operator
-        this.operator = operator;
+        lastKey = formula[formula.length - 1];
+        if (lastKey === '/' || lastKey === '*' || lastKey === '-' || lastKey === '+' || lastKey === '.')  {
+          formula=formula.substr(0,formula.length - 1);
+        }
+        console.log("Formula " +formula);
+        this.result = eval(formula);
     }
 
-    cancel() {
-        // Cancel all values
-        this.sum = 0;
-        this.operator = '';
-        this.operationsSave = '0';
-        this.operationDone = false;
-    }
-
-    squared() {
-        this.sum *= this.sum;
-        this.operationsSave = this.operationsSave + '²';
+    getAnswer() {
+        this.calcAnswer();
+        this.input = this.result;
+        if (this.input=="0") this.input="";
     }
 }

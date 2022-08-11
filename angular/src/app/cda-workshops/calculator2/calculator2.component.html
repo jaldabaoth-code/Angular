@@ -2,37 +2,33 @@
 <h3 class="text-center">Calculator</h3>
 <hr>
 <div class="d-flex justify-content-center">
-  <div class="col-5 d-flex flex-column">
-    <div class="displaySum col px-3 mx-0 mt-2 text-right h1">{{ sum }}</div>
-    <div class="bg-info col text-right">{{ operationsSave }}</div>
-    <div class="col line">
-      <div class="button ml-0" (click)="operation('1')">1</div>
-      <div class="button" (click)="operation('2')">2</div>
-      <div class="button" (click)="operation('3')">3</div>
-      <div class="button mr-0" (click)="operation('+')">+</div>
+    <div class="calculator col-5 d-flex flex-column">
+        <div class="displaySum col px-3 mx-0 mt-2 text-right h1">{{ sum }}</div>
+        <div class="bg-info col text-right">{{ operationsSave }}</div>
+        <div class="line">
+            <div class="button ml-0" (click)="operations('1')">1</div>
+            <div class="button" (click)="operations('2')">2</div>
+            <div class="button" (click)="operations('3')">3</div>
+            <div class="button mr-0" (click)="operations('+')">+</div>
+        </div>
+        <div class="line">
+            <div class="button ml-0" (click)="operations('4')">4</div>
+            <div class="button" (click)="operations('5')">5</div>
+            <div class="button" (click)="operations('6')">6</div>
+            <div class="button mr-0" (click)="operations('-')">-</div>
+        </div>
+        <div class="line">
+            <div class="button ml-0" (click)="operations('7')">7</div>
+            <div class="button" (click)="operations('8')">8</div>
+            <div class="button" (click)="operations('9')">9</div>
+            <div class="button mr-0" (click)="operations('*')">*</div>
+        </div>
+        <div class="line">
+            <div class="button ml-0" (click)="cancel()">C</div>
+            <div class="button" (click)="operations('0')">0</div>
+            <div class="button" (click)="equal()">=</div>
+            <div class="button mr-0" (click)="operations('/')">/</div>
+        </div>
     </div>
-    <div class="col line">
-      <div class="button ml-0" (click)="operation('4')">4</div>
-      <div class="button" (click)="operation('5')">5</div>
-      <div class="button" (click)="operation('6')">6</div>
-      <div class="button mr-0" (click)="operation('-')">-</div>
-    </div>
-    <div class="col line">
-      <div class="button ml-0" (click)="operation('7')">7</div>
-      <div class="button" (click)="operation('8')">8</div>
-      <div class="button" (click)="operation('9')">9</div>
-      <div class="button mr-0" (click)="operation('*')">*</div>
-    </div>
-    <div class="col line">
-      <div class="button ml-0" (click)="cancel()">C</div>
-      <div class="button" (click)="operation('0')">0</div>
-      <div class="button" (click)="equal()">=</div>
-      <div class="button mr-0" (click)="operation('/')">/</div>
-    </div>
-  </div>
 </div>
-
-
-<!--<h1>Hello, you have pressed enter {{counter}} number of times!</h1> Press enter key
-to increment the counter.
-<button (click)="resetCounter()">Reset Counter</button>-->
+<div class="d-flex justify-content-center text-danger my-3">{{ errorMessage }}</div>

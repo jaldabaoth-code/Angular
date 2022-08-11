@@ -1,36 +1,39 @@
 .button {
-  cursor: pointer;
-  background-color: gray;
-  color: lavender;
-  font-weight: bold;
-  user-select: none;
-  margin: 3px;
-  width: 25%;
-  border-radius: 7px;
+    cursor: pointer;
+    background-color: gray;
+    color: lavender;
+    font-weight: bold;
+    user-select: none;
+    margin: 3px;
+    width: 25%;
+    border-radius: 7px;
 }
 
 .button:hover {
-  background-color: #999999;
-  color: white;
-  font-weight: bold;
+    background-color: #999999;
+    color: white;
+    font-weight: bold;
 }
 
 .displaySum {
-  background-color: gainsboro;
-  color: black;
-  font-weight: bold;
-  width: 100%;
-  margin: 3px;
-}
-
-.displayOperations {
-
+    background-color: gainsboro;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+    margin: 3px;
 }
 
 .line {
-  display: flex;
-  text-align: center;
-  font-size: 2.2em;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    text-align: center;
+    font-size: 2.2em;
+    margin: 0;
+    padding: 0;
+}
+
+.calculator {
+    display: block;
+    border: 10px solid black;
+    padding: 20px;
+    border-radius: 30px;
 }
