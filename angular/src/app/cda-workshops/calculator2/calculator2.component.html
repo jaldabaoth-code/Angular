@@ -1,6 +1,7 @@
 <h2 class="text-center">Workshop</h2>
 <h3 class="text-center">Calculator</h3>
 <hr>
+<h4 class="text-center">Click on buttons or use your keyboard</h4>
 <div class="d-flex justify-content-center">
     <div class="calculator col-5 d-flex flex-column">
         <div class="displaySum col px-3 mx-0 mt-2 text-right h1">{{ sum }}</div>
@@ -24,9 +25,9 @@
             <div class="button mr-0" (click)="operations('*')">*</div>
         </div>
         <div class="line">
-            <div class="button ml-0" (click)="cancel()">C</div>
+            <div class="button ml-0" (click)="clear()">C</div>
             <div class="button" (click)="operations('0')">0</div>
-            <div class="button" (click)="equal()">=</div>
+            <div class="button" (click)="calculate()">=</div>
             <div class="button mr-0" (click)="operations('/')">/</div>
         </div>
     </div>

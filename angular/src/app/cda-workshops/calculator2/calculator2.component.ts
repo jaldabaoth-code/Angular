@@ -15,7 +15,7 @@ export class Calculator2Component implements OnInit {
     constructor() { }
 
     ngOnInit(): void {
-        this.cancel();
+        this.clear();
     }
 
     operations(character: string) {
@@ -47,14 +47,14 @@ export class Calculator2Component implements OnInit {
         }
     }
 
-    /* Cancel all values */
-    cancel() {
+    /* Clear all values */
+    clear() {
         this.sum = 0;
         this.operationsSave = '0';
         this.errorMessage = '';
     }
 
-    equal() {
+    calculate() {
         // If user don't set last number and ends with an operator
         let lastOperation = this.operationsSave.slice(this.operationsSave.length - 1);
         if (lastOperation == '+' || lastOperation == '-') {
@@ -80,7 +80,7 @@ export class Calculator2Component implements OnInit {
         }
         /* If the keyboard key Enter */
         if (event.key === 'Enter') {
-            this.equal();
+            this.calculate();
         }
     }
 }
