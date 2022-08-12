@@ -11,10 +11,10 @@ import { HomeComponent } from './home/home.component';
 import { CdaQuestsNavComponent } from './cda-quests/cda-quests-nav/cda-quests-nav.component';
 import { ComponentsComponent } from './cda-quests/01-components/components.component';
 import { BindingComponent } from './cda-quests/02-binding/binding.component';
-import { Directives1Component } from './cda-quests/03-directives/directives1/directives1.component';
-import { Directives2Component } from './cda-quests/03-directives/directives2/directives2.component';
-import { DisplayMoviesDirective } from './cda-quests/03-directives/directives2/display-movies.directive';
-import { StylesDirective } from './cda-quests/03-directives/directives2/styles.directive';
+import { Directives1Component } from './cda-quests/03-directives1/directives1.component';
+import { Directives2Component } from './cda-quests/03-directives2/directives2.component';
+import { DisplayMoviesDirective } from './cda-quests/03-directives2/display-movies.directive';
+import { StylesDirective } from './cda-quests/03-directives2/styles.directive';
 import { RouterComponent } from './cda-quests/04-router/router.component';
 import { DrivenFormsComponent } from './cda-quests/05-driven-forms/driven-forms.component';
 import { ReactiveFormsComponent } from './cda-quests/06-reactive-forms/reactive-forms.component';
@@ -30,24 +30,28 @@ import { ListKittenComponent } from "./cda-quests/09-user-interactions/list-kitt
 import { Services1Component } from "./cda-quests/10-services1/services1.component";
 import { Services2Component } from "./cda-quests/11-services2/services2.component";
 import { NasaComponent } from "./cda-quests/12-nasa/nasa.component";
-import { PokedexPageComponent } from "./cda-quests/13-pokedex/pokedex-page.component";
 import { PokedexNavComponent } from './cda-quests/13-pokedex/components/pokedex-nav/pokedex-nav.component';
+import { PokedexComponent } from './cda-quests/13-pokedex/pokedex.component';
+import { PokedexPageComponent } from "./cda-quests/13-pokedex/components/pokedex-page/pokedex-page.component";
 import { CreatePokemonComponent } from "./cda-quests/13-pokedex/components/create-pokemon/create-pokemon.component";
 import { PokemonListComponent} from "./cda-quests/13-pokedex/components/pokemon-list/pokemon-list.component";
 import { PokemonDetailComponent } from "./cda-quests/13-pokedex/components/pokemon-detail/pokemon-detail.component";
 import { LogInterceptor } from "./cda-quests/17-interceptor/core/log.interceptor";
-import { GamesListComponent } from './cda-checkpoint-2/games-list/games-list.component';
-import { GameComponent } from './cda-checkpoint-2/game/game.component';
-import { SignUpComponent } from './tutorials/reactive-forms/sign-up/sign-up.component';
+import { Checkpoint2Component } from './cda-checkpoints/checkpoint-2/checkpoint2.component';
+import { GamesListComponent } from './cda-checkpoints/checkpoint-2/games-list/games-list.component';
+import { GameComponent } from './cda-checkpoints/checkpoint-2/game/game.component';
+import { CdaWorkshopsNavComponent } from './cda-workshops/cda-workshops-nav/cda-workshops-nav.component';
+import { SpringAngularSecurityComponent } from './cda-workshops/spring-angular-security/spring-angular-security.component';
 import { SpringRequestComponent } from './cda-workshops/spring-angular-security/spring-request/spring-request.component';
 import { AuthenticationComponent } from './cda-workshops/spring-angular-security/authentication/authentication.component';
-import { CalculatorComponent } from './tutorials/calculator/calculator.component';
-import { Calculator2Component } from './cda-workshops/calculator2/calculator2.component';
-import { CdaWorkshopsNavComponent } from './cda-workshops/cda-workshops-nav/cda-workshops-nav.component';
+import { CalculatorWorkshopComponent } from "./cda-workshops/calculator-workshop/calculator-workshop.component";
 import { TutorialsNavComponent } from './tutorials/tutorials-nav/tutorials-nav.component';
+import { ReactiveFormTutorialComponent } from './tutorials/reactive-form-tutorial/reactive-form-tutorial.component';
+import { SignUpComponent } from './tutorials/reactive-form-tutorial/sign-up/sign-up.component';
+import { CalculatorTutorialComponent } from "./tutorials/calculator-tutorial/calculator-tutorial.component";
 
 @NgModule({
-    declarations: [AppComponent, NavbarComponent, HomeComponent, CdaQuestsNavComponent, ComponentsComponent, BindingComponent, Directives1Component, Directives2Component, DisplayMoviesDirective, StylesDirective, RouterComponent, DrivenFormsComponent, ReactiveFormsComponent, InputComponent, DeveloperComponent, SkillComponent, OutputComponent, CreateOnomatopoeiaComponent, UserInteractionsComponent, CreateKittenComponent, UserKittenComponent, ListKittenComponent, Services1Component, Services2Component, NasaComponent, PokedexPageComponent, PokedexNavComponent, CreatePokemonComponent, PokemonListComponent, PokemonDetailComponent, GamesListComponent, GameComponent, SignUpComponent, SpringRequestComponent, AuthenticationComponent, CalculatorComponent, Calculator2Component, CdaWorkshopsNavComponent, TutorialsNavComponent],
+    declarations: [AppComponent, NavbarComponent, HomeComponent, CdaQuestsNavComponent, ComponentsComponent, BindingComponent, Directives1Component, Directives2Component, DisplayMoviesDirective, StylesDirective, RouterComponent, DrivenFormsComponent, ReactiveFormsComponent, InputComponent, DeveloperComponent, SkillComponent, OutputComponent, CreateOnomatopoeiaComponent, UserInteractionsComponent, CreateKittenComponent, UserKittenComponent, ListKittenComponent, Services1Component, Services2Component, NasaComponent, PokedexNavComponent, PokedexComponent, PokedexPageComponent, CreatePokemonComponent, PokemonListComponent, PokemonDetailComponent, Checkpoint2Component, GamesListComponent, GameComponent, CdaWorkshopsNavComponent, SpringAngularSecurityComponent, SpringRequestComponent, AuthenticationComponent, CalculatorWorkshopComponent, TutorialsNavComponent, ReactiveFormTutorialComponent, SignUpComponent, CalculatorTutorialComponent],
     imports: [HttpClientModule, BrowserModule, FormsModule, ReactiveFormsModule, RouterModule.forRoot(ROUTES, {onSameUrlNavigation: 'reload'}), AppRoutingModule],
     exports: [RouterModule],
     providers: [

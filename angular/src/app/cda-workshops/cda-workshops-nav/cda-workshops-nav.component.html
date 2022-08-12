@@ -1,1 +1,14 @@
-<p>cda-workshops-nav works!</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item font-weight-bold">
+                    <a [routerLink]="['/spring-angular-security']" [routerLinkActive]="['active']" [class.active]="router.url==='/authentication'" class="nav-link font-weight-bold">Spring-Angular Security</a>
+                </li>
+                <li class="nav-item font-weight-bold">
+                    <a [routerLink]="['/calculator-workshop']" [routerLinkActive]="['active']" class="nav-link font-weight-bold">Calculator Workshop</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

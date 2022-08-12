@@ -4,7 +4,7 @@ import { isRequiredValidator } from "./utils/idOrTitleRequired-validation";
 import { yearOfReleaseValidation } from "./utils/yearOfRelease-validation";
 
 @Component({
-    selector: 'app-reactive-forms',
+    selector: 'app-reactive-form-tutorial',
     templateUrl: './reactive-forms.component.html',
     styleUrls: ['./reactive-forms.component.css']
 })

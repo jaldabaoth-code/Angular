@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
     selector: 'app-cda-workshops-nav',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./cda-workshops-nav.component.css']
 })
 export class CdaWorkshopsNavComponent implements OnInit {
-    constructor() { }
+    constructor(public router: Router) { }
 
     ngOnInit(): void { }
 }

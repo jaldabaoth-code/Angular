@@ -6,22 +6,16 @@
                     <a routerLink="/" [class.active]="router.url === '/'" class="nav-link font-weight-bold h4">Home</a>
                 </li>
                 <li class="nav-item font-weight-bold mx-3">
-                    <a routerLink="/components" [ngClass]="(router.url === '/games-list' || router.url === '/sign-up' || router.url === '/' || router.url === '/spring-angular-security')? '' :'active'" class="nav-link font-weight-bold h4">CDA Quests</a>
+                    <a routerLink="/components" [ngClass]="(isCdaQuestsUrl())? 'active' :''" class="nav-link font-weight-bold h4">CDA Quests</a>
                 </li>
                 <li class="nav-item font-weight-bold mx-3">
-                    <a routerLink="/games-list" [routerLinkActive]="['active']" class="nav-link font-weight-bold h4">CDA Checkpoint 2</a>
+                    <a routerLink="/checkpoint-2" [routerLinkActive]="['active']" class="nav-link font-weight-bold h4">CDA Checkpoint 2</a>
                 </li>
                 <li class="nav-item font-weight-bold mx-3">
-                    <a routerLink="/sign-up" [routerLinkActive]="['active']" class="nav-link font-weight-bold h4">Tutorials</a>
+                    <a routerLink="/spring-angular-security" [ngClass]="(isCdaWorkshopsUrl())? 'active' :''" class="nav-link font-weight-bold h4">Workshops</a>
                 </li>
                 <li class="nav-item font-weight-bold mx-3">
-                    <a routerLink="/spring-angular-security" [routerLinkActive]="['active']" class="nav-link font-weight-bold h4">Workshops</a>
-                </li>
-                <li class="nav-item font-weight-bold mx-3">
-                    <a routerLink="/calculator" [routerLinkActive]="['active']" class="nav-link font-weight-bold h4">Calculator</a>
-                </li>
-                <li class="nav-item font-weight-bold mx-3">
-                    <a routerLink="/calculator2" [routerLinkActive]="['active']" class="nav-link font-weight-bold h4">Calculator 2</a>
+                    <a routerLink="/reactive-form-tutorial" [ngClass]="(isTutorialsUrl())? 'active' :''" class="nav-link font-weight-bold h4">Tutorials</a>
                 </li>
             </ul>
         </div>

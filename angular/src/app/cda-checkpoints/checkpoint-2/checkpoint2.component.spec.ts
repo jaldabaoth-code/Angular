@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { TutorialsNavComponent } from './tutorials-nav.component';
+import { Checkpoint2Component } from './checkpoint2.component';
 
-describe('TutorialsNavComponent', () => {
-    let component: TutorialsNavComponent;
-    let fixture: ComponentFixture<TutorialsNavComponent>;
+describe('Checkpoint2Component', () => {
+    let component: Checkpoint2Component;
+    let fixture: ComponentFixture<Checkpoint2Component>;
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [TutorialsNavComponent]
+            declarations: [Checkpoint2Component]
         })
         .compileComponents();
     });
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(TutorialsNavComponent);
+        fixture = TestBed.createComponent(Checkpoint2Component);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

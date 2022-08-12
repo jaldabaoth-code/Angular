@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { TutorialsNavComponent } from './tutorials-nav.component';
+import { PokedexComponent } from './pokedex.component';
 
-describe('TutorialsNavComponent', () => {
-    let component: TutorialsNavComponent;
-    let fixture: ComponentFixture<TutorialsNavComponent>;
+describe('PokedexComponent', () => {
+    let component: PokedexComponent;
+    let fixture: ComponentFixture<PokedexComponent>;
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [TutorialsNavComponent]
+            declarations: [PokedexComponent]
         })
         .compileComponents();
     });
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(TutorialsNavComponent);
+        fixture = TestBed.createComponent(PokedexComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

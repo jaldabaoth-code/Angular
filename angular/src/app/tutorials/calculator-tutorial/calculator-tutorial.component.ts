@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-calculator',
-    templateUrl: './calculator.component.html',
-    styleUrls: ['./calculator.component.css']
+    selector: 'app-calculator-tutorial',
+    templateUrl: './calculator-tutorial.component.html',
+    styleUrls: ['./calculator-tutorial.component.css']
 })
-export class CalculatorComponent {
+export class CalculatorTutorialComponent {
     input: string = '';
     result: string = '';
     operators = ['+', '-', '*', '/'];
 
     pressNum(number: string) {
-        //Do Not Allow . more than once
+        // Do Not Allow . more than once
         if (number == ".") {
-            if (this.input != "" ) {
+            if (this.input != "") {
                 const lastNumber = this.getLastOperand();
                 if (lastNumber.lastIndexOf(".") >= 0) {
                     return;
@@ -51,7 +51,7 @@ export class CalculatorComponent {
     }
 
     pressOperator(operator: string) {
-        //Do not allow operators more than once
+        // Do not allow operators more than once
         const lastKey = this.input[this.input.length - 1];
         if (this.operators.indexOf(lastKey) !== -1)  {
             return;

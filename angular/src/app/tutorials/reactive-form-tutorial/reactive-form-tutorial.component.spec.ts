@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { TutorialsNavComponent } from './tutorials-nav.component';
+import { ReactiveFormTutorialComponent } from './reactive-form-tutorial.component';
 
-describe('TutorialsNavComponent', () => {
-    let component: TutorialsNavComponent;
-    let fixture: ComponentFixture<TutorialsNavComponent>;
+describe('ReactiveFormTutorialComponent', () => {
+    let component: ReactiveFormTutorialComponent;
+    let fixture: ComponentFixture<ReactiveFormTutorialComponent>;
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [TutorialsNavComponent]
+            declarations: [ReactiveFormTutorialComponent]
         })
         .compileComponents();
     });
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(TutorialsNavComponent);
+        fixture = TestBed.createComponent(ReactiveFormTutorialComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

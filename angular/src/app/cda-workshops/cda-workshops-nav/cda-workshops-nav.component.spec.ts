@@ -7,7 +7,7 @@ describe('CdaWorkshopsNavComponent', () => {
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [ CdaWorkshopsNavComponent ]
+            declarations: [CdaWorkshopsNavComponent]
         })
         .compileComponents();
     });

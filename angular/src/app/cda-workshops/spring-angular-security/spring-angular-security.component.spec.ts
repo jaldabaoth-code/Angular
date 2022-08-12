@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { TutorialsNavComponent } from './tutorials-nav.component';
+import { SpringAngularSecurityComponent } from './spring-angular-security.component';
 
-describe('TutorialsNavComponent', () => {
-    let component: TutorialsNavComponent;
-    let fixture: ComponentFixture<TutorialsNavComponent>;
+describe('SpringAngularSecurityComponent', () => {
+    let component: SpringAngularSecurityComponent;
+    let fixture: ComponentFixture<SpringAngularSecurityComponent>;
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [TutorialsNavComponent]
+            declarations: [SpringAngularSecurityComponent]
         })
         .compileComponents();
     });
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(TutorialsNavComponent);
+        fixture = TestBed.createComponent(SpringAngularSecurityComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

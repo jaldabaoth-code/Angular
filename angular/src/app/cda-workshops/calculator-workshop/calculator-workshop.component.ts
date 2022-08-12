@@ -1,11 +1,11 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'app-calculator2',
-    templateUrl: './calculator2.component.html',
-    styleUrls: ['./calculator2.component.css']
+    selector: 'app-calculator-tutorial-workshop',
+    templateUrl: './calculator-workshop.component.html',
+    styleUrls: ['./calculator-workshop.component.css']
 })
-export class Calculator2Component implements OnInit {
+export class CalculatorWorkshopComponent implements OnInit {
     operationsSave: string;
     sum: number;
     errorMessage: string;
@@ -74,11 +74,11 @@ export class Calculator2Component implements OnInit {
     /* Use keyboard keys */
     @HostListener('window:keydown' , ['$event'])
     handleKeyDown(event: KeyboardEvent) {
-        /* If the keyboard key is an operator or a number */
+        // If the keyboard key is an operator or a number
         if ((this.numbers.indexOf(event.key) !== -1) || (this.operators.indexOf(event.key) !== -1)) {
             this.operations(event.key);
         }
-        /* If the keyboard key Enter */
+        // If the keyboard key Enter
         if (event.key === 'Enter') {
             this.calculate();
         }
