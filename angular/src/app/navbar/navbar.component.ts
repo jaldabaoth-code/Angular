@@ -10,7 +10,7 @@ export class NavbarComponent {
     readonly cdaQuestsUrls = [
         '/components', '/binding', '/directives-1',
         '/directives-2', '/router', '/driven-forms',
-        '/reactive-form-tutorial', '/input', '/output',
+        '/reactive-form', '/input', '/output',
         '/user-interactions', '/services-1', '/services-2',
         '/nasa', '/pokedex', '/create-pokemon'
     ];
