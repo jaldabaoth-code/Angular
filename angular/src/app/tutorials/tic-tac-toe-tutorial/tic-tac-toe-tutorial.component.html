@@ -1,0 +1,16 @@
+<app-tutorials-nav></app-tutorials-nav>
+<h2 class="text-center">Tutorial</h2>
+<h3 class="text-center">Tic Tac Toe</h3>
+<hr>
+<div class="game-zone">
+    <div class="box" *ngFor="let case of cases; let i = index" [ngClass]="{'cross': case.value === 'C', 'round': case.value === 'R',
+        'cross-next' : turn === 0 && case.value === '', 'computer' : turn === 1}" (click)="playerClick(i)">
+    </div>
+</div>
+<div *ngIf="isGameOver" class="col-md-12 result-modal">
+    <div class="result">
+        <p>{{ gameResult }}</p>
+        <button class="btn btn-info" (click)=restartGame()>Restart</button>
+    </div>
+</div>
+

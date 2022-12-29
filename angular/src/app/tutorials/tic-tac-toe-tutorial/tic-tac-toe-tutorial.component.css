@@ -1,0 +1,84 @@
+.game-zone {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    color: #fff;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    border-radius: 15px;
+    background: linear-gradient(#f9eed0, #f9e5d6);
+    padding: 10px;
+}
+
+.box {
+    margin: 3px;
+    border-radius: 15px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Font Awesome 5 Free";
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.box.cross-next:hover {
+    background-color: #dc685a;
+}
+
+.box.cross-next:hover.cross-next::after {
+    content: "\f00d";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.box.computer {
+    cursor: not-allowed;
+}
+
+.box.cross {
+    background-color: #dc685a;
+}
+
+.box.cross.cross::after {
+    content: "\f00d";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.box.round {
+    background-color: #b6d173;
+}
+
+.box.round.round::after {
+    font-weight: 400;
+    content: "\f111";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.result-modal {
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.result {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+}
+
+.result p {
+    font-weight: 400;
+    font-size: 18px;
+}

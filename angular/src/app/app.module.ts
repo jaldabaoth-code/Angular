@@ -49,18 +49,14 @@ import { TutorialsNavComponent } from './tutorials/tutorials-nav/tutorials-nav.c
 import { ReactiveFormTutorialComponent } from './tutorials/reactive-form-tutorial/reactive-form-tutorial.component';
 import { SignUpComponent } from './tutorials/reactive-form-tutorial/sign-up/sign-up.component';
 import { CalculatorTutorialComponent } from "./tutorials/calculator-tutorial/calculator-tutorial.component";
+import { TicTacToeTutorialComponent } from './tutorials/tic-tac-toe-tutorial/tic-tac-toe-tutorial.component';
+import { GameService } from "./tutorials/tic-tac-toe-tutorial/Core/Game.Service";
 
 @NgModule({
-    declarations: [AppComponent, NavbarComponent, HomeComponent, CdaQuestsNavComponent, ComponentsComponent, BindingComponent, Directives1Component, Directives2Component, DisplayMoviesDirective, StylesDirective, RouterComponent, DrivenFormsComponent, ReactiveFormsComponent, InputComponent, DeveloperComponent, SkillComponent, OutputComponent, CreateOnomatopoeiaComponent, UserInteractionsComponent, CreateKittenComponent, UserKittenComponent, ListKittenComponent, Services1Component, Services2Component, NasaComponent, PokedexNavComponent, PokedexComponent, PokedexPageComponent, CreatePokemonComponent, PokemonListComponent, PokemonDetailComponent, Checkpoint2Component, GamesListComponent, GameComponent, CdaWorkshopsNavComponent, SpringAngularSecurityComponent, SpringRequestComponent, AuthenticationComponent, CalculatorWorkshopComponent, TutorialsNavComponent, ReactiveFormTutorialComponent, SignUpComponent, CalculatorTutorialComponent],
+    declarations: [AppComponent, NavbarComponent, HomeComponent, CdaQuestsNavComponent, ComponentsComponent, BindingComponent, Directives1Component, Directives2Component, DisplayMoviesDirective, StylesDirective, RouterComponent, DrivenFormsComponent, ReactiveFormsComponent, InputComponent, DeveloperComponent, SkillComponent, OutputComponent, CreateOnomatopoeiaComponent, UserInteractionsComponent, CreateKittenComponent, UserKittenComponent, ListKittenComponent, Services1Component, Services2Component, NasaComponent, PokedexNavComponent, PokedexComponent, PokedexPageComponent, CreatePokemonComponent, PokemonListComponent, PokemonDetailComponent, Checkpoint2Component, GamesListComponent, GameComponent, CdaWorkshopsNavComponent, SpringAngularSecurityComponent, SpringRequestComponent, AuthenticationComponent, CalculatorWorkshopComponent, TutorialsNavComponent, ReactiveFormTutorialComponent, SignUpComponent, CalculatorTutorialComponent, TicTacToeTutorialComponent],
     imports: [HttpClientModule, BrowserModule, FormsModule, ReactiveFormsModule, RouterModule.forRoot(ROUTES, {onSameUrlNavigation: 'reload'}), AppRoutingModule],
     exports: [RouterModule],
-    providers: [
-        {
-            provide: HTTP_INTERCEPTORS,
-            useClass: LogInterceptor,
-            multi: true
-        }
-    ],
+    providers: [GameService, { provide: HTTP_INTERCEPTORS, useClass: LogInterceptor, multi: true }],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -21,6 +21,7 @@ import { AuthenticationComponent } from "./cda-workshops/spring-angular-security
 import { CalculatorWorkshopComponent } from "./cda-workshops/calculator-workshop/calculator-workshop.component";
 import { ReactiveFormTutorialComponent } from "./tutorials/reactive-form-tutorial/reactive-form-tutorial.component";
 import { CalculatorTutorialComponent } from "./tutorials/calculator-tutorial/calculator-tutorial.component";
+import { TicTacToeTutorialComponent } from "./tutorials/tic-tac-toe-tutorial/tic-tac-toe-tutorial.component";
 
 const ROUTES: Routes = [
     { path: '', component: HomeComponent },
@@ -44,6 +45,7 @@ const ROUTES: Routes = [
     { path: 'authentication', component: AuthenticationComponent },
     { path: 'calculator-workshop', component: CalculatorWorkshopComponent },
     { path: 'reactive-form-tutorial', component: ReactiveFormTutorialComponent },
-    { path: 'calculator-tutorial', component: CalculatorTutorialComponent }
+    { path: 'calculator-tutorial', component: CalculatorTutorialComponent },
+    { path: 'tic-tac-toe-tutorial', component: TicTacToeTutorialComponent }
 ];
 export { ROUTES };
