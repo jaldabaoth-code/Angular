@@ -15,7 +15,7 @@ export class NavbarComponent {
         '/nasa', '/pokedex', '/create-pokemon'
     ];
     readonly cdaWorkshopsUrls = ['/spring-angular-security', '/authentication', '/calculator-workshop'];
-    readonly tutorialsUrls = ['/reactive-form-tutorial', '/calculator-tutorial'];
+    readonly tutorialsUrls = ['/reactive-form-tutorial', '/calculator-tutorial', '/tic-tac-toe-tutorial'];
 
     constructor(public router: Router) { }
 
