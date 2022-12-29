@@ -1,4 +1,4 @@
-export class Case {
+export class Square {
     value = '';
 
     public setValue(value: string) {
