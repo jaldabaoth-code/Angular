@@ -67,6 +67,8 @@
 
 24. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/tutorials/calculator-tutorial/">Angular Tutorial - Calculator Tutorial</a>
 
+25. <a href="https://github.com/jaldabaoth-code/Angular/tree/main/angular/src/app/tutorials/tic-tac-toe-tutorial/">Angular Tutorial - Tic Tac Toe Tutorial</a>
+
 ---
 
 <a href="https://github.com/WildCodeSchool/Orleans_sept2021_checkpoint_3_angular">Link to the repository of <b>WCS CDA Java Checkpoint 2 (Angular)</b></a>
